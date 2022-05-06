@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import './style.scss'
 
-function About() {
+function CardsPage() {
   return (
     <>
       <main>
@@ -15,4 +15,4 @@ function About() {
   );
 }
 
-export default About;
+export default CardsPage;

@@ -22,9 +22,12 @@ class Header extends React.Component {
   render() {
     return (
       <header>
+        <div className="logo"></div>
         {this.state.position}
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        <nav>
+          <Link to="/">Home</Link>
+          <Link to="/cards">Cards</Link>
+        </nav>
       </header>
     );
   }

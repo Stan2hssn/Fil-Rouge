@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer>
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        <Link to="/cards">Cards</Link>
     </footer>
   );
 }

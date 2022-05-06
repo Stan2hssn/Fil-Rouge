@@ -1,23 +1,24 @@
 import {Link} from 'react-router-dom'
 import './style.scss'
 
-function Home() {
+function HomePage() {
   return (
-    <div className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Link to="/about">About</Link>
-    </div>
+    <>
+        <section id="Hero">
+          <h2>Section 1</h2>
+        </section>
+        <section id="About">
+          <h2>Section 2</h2>
+        </section>
+        <section id="Liquid">
+          <h2>Section 3</h2>
+        </section>
+        <section id="Card">
+          <h2>Section 4</h2>
+        </section>
+        <canvas id="BGC"></canvas>
+    </>
   );
 }
 
-export default Home;
+export default HomePage;
