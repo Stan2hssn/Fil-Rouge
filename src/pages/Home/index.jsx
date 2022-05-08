@@ -1,9 +1,10 @@
-import {Link} from 'react-router-dom'
-import './style.scss'
+import { Link } from "react-router-dom";
+import "./style.scss";
 
-function HomePage() {
-  return (
-    <>
+class HomePage extends React.Component {
+  render() {
+    return (
+      <>
         <section id="Hero">
           <h2>Section 1</h2>
         </section>
@@ -17,8 +18,9 @@ function HomePage() {
           <h2>Section 4</h2>
         </section>
         <canvas id="BGC"></canvas>
-    </>
-  );
+      </>
+    );
+  }
 }
 
 export default HomePage;
