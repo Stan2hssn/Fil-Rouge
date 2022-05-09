@@ -23,7 +23,7 @@ class Header extends React.Component {
     return (
       <header>
         <div className="logo"></div>
-        {this.state.position}
+        {/* {this.state.position} */}
         <nav>
           <Link to="/">Home</Link>
           <Link to="/cards">Cards</Link>

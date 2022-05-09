@@ -2,3 +2,8 @@
 @use '../../styles/_general';
 @use '../../styles/_spacing';
 @use '../../styles/_typo';
+
+header {
+    position: absolute;
+    opacity: 0;
+}

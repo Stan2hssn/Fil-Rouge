@@ -1,0 +1,32 @@
+@use '../../styles/_colors.scss';
+@use '../../styles/_general';
+@use '../../styles/_spacing';
+@use '../../styles/_typo';
+
+.animation-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.sphere-animation {
+  position: absolute;
+  top: -195px;
+  left: -195px;
+  width: 580px;
+  height: 580px;
+  margin: 0;
+}
+
+.sphere path {
+  fill: url(#sphereGradient);
+  stroke-width: 1px;
+  stroke: rgba(80,80,80,.35);
+  backface-visibility: hidden;
+}
+
+@media (min-width: 500px) {
+  .sphere path {
+    stroke-width: .4px;
+  }
+}
