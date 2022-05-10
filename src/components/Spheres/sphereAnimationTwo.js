@@ -16,7 +16,7 @@ const fitElementToParent = (el, padding) => {
   window.addEventListener("resize", resize);
 };
 
-const sphereAnimation = (id) => {
+const sphereAnimationTwo = (id) => {
   let sphereEl = document.querySelector(`.sphere-animation[index="${id}"]`);
   let spherePathEls = sphereEl.querySelectorAll(".sphere path");
   let pathLength = spherePathEls.length;
@@ -34,8 +34,8 @@ const sphereAnimation = (id) => {
               value: ["rgba(255,75,75,1)", "rgba(80,80,80,.35)"],
               duration: 500,
             },
-            translateX: [2, -4],
-            translateY: [2, -4],
+            translateX: [4, 8],
+            translateY: [12, 4],
             easing: "easeOutQuad",
             autoplay: false,
           })
@@ -44,7 +44,7 @@ const sphereAnimation = (id) => {
     },
     update: function (ins) {
       aimations.forEach(function (animation, i) {
-        let percent = (1 - Math.sin(i * 0.35 + 0.0022 * ins.currentTime)) / 2;
+        let percent = (1 - Math.sin(i * -0.35 + 0.0022 * ins.currentTime)) / 2;
         animation.seek(animation.duration * percent);
       });
     },
@@ -61,7 +61,7 @@ const sphereAnimation = (id) => {
         targets: spherePathEls,
         strokeDashoffset: {
           value: [anime.setDashoffset, 0],
-          duration: 3900,
+          duration: 0,
           easing: "easeInOutCirc",
           delay: anime.stagger(190, { direction: "reverse" }),
         },
@@ -95,4 +95,4 @@ const sphereAnimation = (id) => {
   init();
 };
 
-export default sphereAnimation;
+export default sphereAnimationTwo;

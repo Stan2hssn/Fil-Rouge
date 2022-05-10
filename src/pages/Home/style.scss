@@ -1,50 +1,74 @@
-@use '../../styles/_colors.scss';
-@use '../../styles/_general';
-@use '../../styles/_spacing';
-@use '../../styles/_typo';
+@import '../../styles/_colors';
+@import '../../styles/_spacing';
+@import '../../styles/_typo';
 
-.position {
-    z-index: 1;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 65%;
-    left: 10%;
-    width: 202px;
-    height: 202px;
-    border-radius: 50%;
-    cursor: pointer;
-}
+#Hero {
+  height: 100vh;
+  padding-right: 128px;
+  padding-left: 128px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 
-.cache-container {
-    z-index: 1;
-    position: absolute;
-    display: flex;
-    font-size: 20px;
-    font-family: helvetica;
-    text-transform: uppercase;
-    align-items: center;
-    justify-content: center;
-    color: #FAFAFA;
-    background: linear-gradient(180deg, #363633 0%, #222222 50%, #0D0D0D 100%);
-    width: 200px !important;
-    height: 200px !important;
-    border-radius: 50%;
-    user-select: none;
-}
-
-.parallax-container {
-    display: block;
-    z-index: -1;
-    background-color: #ff4b4b;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-
-.position:active {
-    .parallax-container {
-        background-color: transparent;
+  .illustration_wrapper {
+    width: 33.25em;
+    .sphere {}:nth-of-type(3) {
+      transform: rotate(60deg);
     }
+
+    .position {
+      z-index: 1;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 65%;
+      left: 10%;
+      width: 201px;
+      height: 201px;
+      border-radius: 50%;
+      cursor: pointer;
+
+      .cache-container {
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        font-size: 20px;
+        font-family: $body_family;
+        text-transform: uppercase;
+        align-items: center;
+        justify-content: center;
+        color: #FAFAFA;
+        background: linear-gradient(180deg, #363633 0%, #222222 50%, #0D0D0D 100%);
+        width: 200px !important;
+        height: 200px !important;
+        border-radius: 50%;
+        user-select: none;
+      }
+
+      .parallax-container {
+        display: block;
+        z-index: -1;
+        background-color: #ff4b4b;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: all 0.2s ease-out;
+      }
+    }
+
+    .position:active {
+      .parallax-container {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .text {
+    width: 52em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

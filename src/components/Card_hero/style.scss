@@ -1,0 +1,24 @@
+.card-container {
+  position: absolute;
+  top: 238px;
+  left: 403.64px;
+  width: 218px;
+  height: 385px;
+  background: url(../../Assets/Cards_intro/Verso_Octopus.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  transform: rotate3d(1, 1, 1, -10deg);
+
+}
+
+.gradient {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(99.61% 99.61% at 64.22% -49.74%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  opacity:1;
+  z-index: 9999;
+  border-radius: 15px;
+
+}

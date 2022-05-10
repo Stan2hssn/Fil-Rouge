@@ -1,7 +1,4 @@
 @use '../../styles/_colors.scss';
-@use '../../styles/_general';
-@use '../../styles/_spacing';
-@use '../../styles/_typo';
 
 .animation-wrapper {
   position: relative;
@@ -20,13 +17,13 @@
 
 .sphere path {
   fill: url(#sphereGradient);
-  stroke-width: 1px;
+  stroke-width: 2px;
   stroke: rgba(80,80,80,.35);
-  backface-visibility: hidden;
 }
 
 @media (min-width: 500px) {
   .sphere path {
-    stroke-width: .4px;
+    stroke-width: 0.1em;
+    transform: translate(10px,10px);
   }
 }

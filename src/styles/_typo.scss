@@ -1,0 +1,29 @@
+@import "colors";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$title_family: Moniqa-NarrowHeading;
+$title: 4em;
+$body_family: Inter;
+$body: 1em;
+$body_weight: 400;
+
+body {
+  font-size: 16px;
+}
+
+h1 {
+  font-family: $title_family;
+  font-size: $title;
+  color: $primary;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 2em;
+  font-family: $body_family;
+  color: $primary;
+  font-weight: $body_weight;
+  text-align: left;
+}
+

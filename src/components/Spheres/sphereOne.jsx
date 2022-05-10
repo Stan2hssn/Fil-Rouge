@@ -2,7 +2,7 @@ import React from "react";
 import sphereAnimation from "./sphereAnimation";
 import "./style.scss";
 
-class Sphere extends React.Component {
+class SphereOne extends React.Component {
   componentDidMount() {
     sphereAnimation(this.props.index);
   }
@@ -53,4 +53,4 @@ class Sphere extends React.Component {
   }
 }
 
-export default Sphere;
+export default SphereOne;
