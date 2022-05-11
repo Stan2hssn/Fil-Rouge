@@ -47,7 +47,7 @@ class HomePage extends React.Component {
                         <SphereOne index="1"/>
                         <CardHero/>
                         <SphereTwo index="2"/>
-                        <div className="position" onClick={this.props.navigate}>
+                        <div className="position">
                             <div
                                 className="parallax-container"
                                 style={{
