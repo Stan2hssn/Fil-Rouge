@@ -6,7 +6,6 @@ import SectionOne from "../../components/Home/Section_One/sectionOne";
 import SectionTwo from "../../components/Home/Section_Two/sectionTwo";
 import SectionThree from "../../components/Home/Section_Three/sectionThree";
 import CardHero from "../../components/Card_hero/index"
-import CardsPage from "../../pages/Cards/index"
 import {Link} from "react-router-dom";
 import "./style.scss";
 
@@ -37,10 +36,6 @@ class HomePage extends React.Component {
         this.setState({xPos: x > 1 ? 1 : x, yPos: y < -1 ? -1 : y});
     };
 
-    useEffect = (e => {
-        const navigate = CardsPage;
-    })
-
     render() {
         return (
             <>
@@ -60,7 +55,7 @@ class HomePage extends React.Component {
                                 }}>
                             </div>
 
-                            <div className="cache-container">DECOUVRIR</div>
+                            <Link className="cache-container" to="/cards">DECOUVRIR</Link>
                         </div>
                     </section>
                     <div className="text">

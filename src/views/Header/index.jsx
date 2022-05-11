@@ -14,7 +14,8 @@ class Header extends React.Component {
     window.removeEventListener("scroll", this.listenToScroll);
   }
   listenToScroll = () => {
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
     const scroll = winScroll;
 
     this.setState({ position: scroll });
@@ -22,7 +23,9 @@ class Header extends React.Component {
   render() {
     return (
       <header>
-        <div   className="logo" to="/">Home></div>
+        <div className="logo" to="/">
+          Home
+        </div>
         {/* {this.state.position} */}
         <nav>
           <Link to="/">Home</Link>
