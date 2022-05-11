@@ -36,16 +36,20 @@ class HomePage extends React.Component {
         this.setState({xPos: x > 1 ? 1 : x, yPos: y < -1 ? -1 : y});
     };
 
+
+
     render() {
         return (
             <>
                 <section id="Hero">
                     <section className="illustration_wrapper">
-                        <CardHero/>
+                        <CardHero index="1" style={{
+                            transform: `translate(${this.state.xPos}px, ${this.state.yPos}px) `,
+                        }}/>
                         <SphereThree index="3"/>
-                        <CardHero/>
+                        <CardHero index="2"/>
                         <SphereOne index="1"/>
-                        <CardHero/>
+                        <CardHero index="3"/>
                         <SphereTwo index="2"/>
                         <div className="position">
                             <div
@@ -74,7 +78,6 @@ class HomePage extends React.Component {
                 < SectionOne/>
                 < SectionTwo/>
                 < SectionThree/>
-                <canvas id="BGC"></canvas>
             </>
         );
     }

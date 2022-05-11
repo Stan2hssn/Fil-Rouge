@@ -36,8 +36,8 @@ const sphereAnimationThree = (id) => {
                             value: ["rgba(255,75,75,1)", "rgba(80,80,80,.35)"],
                             duration: 500,
                         },
-                        translateX: [3, -1],
-                        translateY: [3, -1],
+                        translateX: [2, 4],
+                        translateY: [2, -12],
                         easing: "easeOutQuad",
                         autoplay: false,
                     })
