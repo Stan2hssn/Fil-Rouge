@@ -19,10 +19,11 @@ h1 {
   color: $primary;
   text-align: left;
   text-transform: uppercase;
+  white-space:nowrap;
 }
 
 p {
-  line-height: 2em;
+  line-height: 1.5em;
   font-family: $body_family;
   color: $primary;
   font-weight: $body_weight;
