@@ -13,9 +13,18 @@
 
   .illustration_wrapper {
     width: 33.25em;
-    .sphere {}:nth-of-type(3) {
-      transform: rotate(60deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card-container:nth-child(1) {
+      transform: translate(26em, 9em) rotate3d(2, 1, 2, 296deg);
     }
+
+    .card-container:nth-child(3) {
+      transform: translate(6em, 2em) rotate3d(1, 1, 1, 320deg);
+    }
+
 
     .position {
       z-index: 1;
@@ -66,7 +75,7 @@
   }
 
   .text {
-    width: 52em;
+    width: 37.5em;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

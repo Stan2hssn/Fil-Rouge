@@ -78,7 +78,7 @@ const sphereAnimationTwo = (id) => {
       x1: "25%",
       x2: "25%",
       y1: "0%",
-      y2: "75%",
+      y2: "25%",
       duration: 30000,
       easing: "easeOutQuint",
       autoplay: false,

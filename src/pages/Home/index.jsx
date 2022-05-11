@@ -6,10 +6,12 @@ import SectionOne from "../../components/Home/Section_One/sectionOne";
 import SectionTwo from "../../components/Home/Section_Two/sectionTwo";
 import SectionThree from "../../components/Home/Section_Three/sectionThree";
 import CardHero from "../../components/Card_hero/index"
-// import { Link } from "react-router-dom";
+import CardsPage from "../../pages/Cards/index"
+import {Link} from "react-router-dom";
 import "./style.scss";
 
 class HomePage extends React.Component {
+
     constructor(props) {
         super(props);
         this.state = {
@@ -17,6 +19,7 @@ class HomePage extends React.Component {
             yPos: 0,
         };
     }
+
 
     componentDidMount() {
         window.addEventListener("mousemove", this.parallax);
@@ -34,16 +37,22 @@ class HomePage extends React.Component {
         this.setState({xPos: x > 1 ? 1 : x, yPos: y < -1 ? -1 : y});
     };
 
+    useEffect = (e => {
+        const navigate = CardsPage;
+    })
+
     render() {
         return (
             <>
                 <section id="Hero">
                     <section className="illustration_wrapper">
-                        <SphereOne index="1"/>
-                        <CardHero />
-                        <SphereTwo index="2" />
+                        <CardHero/>
                         <SphereThree index="3"/>
-                        <div className="position">
+                        <CardHero/>
+                        <SphereOne index="1"/>
+                        <CardHero/>
+                        <SphereTwo index="2"/>
+                        <div className="position" onClick={this.props.navigate}>
                             <div
                                 className="parallax-container"
                                 style={{

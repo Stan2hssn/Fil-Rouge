@@ -9,8 +9,8 @@ class SphereThree extends React.Component {
 
   render() {
     return (
-      <div className="animation-wrapper">
-        <div className="sphere-animation" index={this.props.index} >
+      <div className="animation-wrapper three">
+        <div className="sphere-animation" index={this.props.index}>
           <svg className="sphere" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)">
             <defs>
               <linearGradient

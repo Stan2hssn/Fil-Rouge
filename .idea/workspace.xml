@@ -2,29 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62df334b-ae73-4584-a0fa-b752cee4e9ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Card_hero/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Card_hero/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/Section_One/sectionOne.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/Section_One/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/Section_Three/sectionThree.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/Section_Three/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/Section_Two/sectionTwo.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/Section_Two/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Spheres/sphereAnimationThree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Spheres/sphereAnimationTwo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Spheres/sphereOne.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Spheres/sphereTwo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sphere/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Spheres/sphereThree.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sphere/sphereAnimation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Spheres/sphereAnimation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sphere/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Spheres/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card_hero/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card_hero/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Spheres/sphereAnimationThree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Spheres/sphereAnimationThree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Spheres/sphereAnimationTwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Spheres/sphereAnimationTwo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Spheres/sphereOne.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Spheres/sphereOne.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Spheres/sphereThree.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Spheres/sphereThree.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Spheres/sphereTwo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Spheres/sphereTwo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Spheres/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Spheres/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_colors.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/_typo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_typo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +98,7 @@
       <workItem from="1651844930387" duration="13437000" />
       <workItem from="1652173456985" duration="79000" />
       <workItem from="1652173539796" duration="18270000" />
-      <workItem from="1652195024038" duration="3570000" />
+      <workItem from="1652195024038" duration="12795000" />
     </task>
     <servers />
   </component>

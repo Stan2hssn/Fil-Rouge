@@ -2,28 +2,49 @@
 
 .animation-wrapper {
   position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
   width: 200px;
   height: 200px;
+
+
+  .sphere-animation {
+    position: relative;
+    width: 9.3em;
+    height: 9.3em;
+    margin: 0;
+  }
+
+  .sphere path {
+    fill: url(#sphereGradient);
+    stroke-width: 2px;
+    stroke: rgba(80, 80, 80, .35);
+  }
+}
+.first {
+  transform: scale(1.2) translate(-8em, -9em);
+
 }
 
-.sphere-animation {
-  position: absolute;
-  top: -195px;
-  left: -195px;
-  width: 580px;
-  height: 580px;
-  margin: 0;
+.two {
+  .sphere-animation {
+    width: 11.3em;
+    height: 11.3em;
+  }
+  transform: translate(-17em, 8em);
 }
 
-.sphere path {
-  fill: url(#sphereGradient);
-  stroke-width: 2px;
-  stroke: rgba(80,80,80,.35);
+.three {.sphere-animation {
+  width: 9em;
+  height: 9em;
+}
+  transform: translate(9em, 3em);
 }
 
 @media (min-width: 500px) {
   .sphere path {
     stroke-width: 0.1em;
-    transform: translate(10px,10px);
+    transform: translate(10px, 10px);
   }
 }
