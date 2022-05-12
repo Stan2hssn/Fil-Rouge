@@ -63,10 +63,11 @@ class HomePage extends React.Component {
                         </div>
                     </section>
                     <div className="text">
-                        <h1>LIQUID, YOUR new digital card
-                            <br/>One card, thousands of posibilities</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A odio lectus sed congue. Arcu diam
-                            ut in ante amet. Ultricies adipiscing aliquam eu, morbi urna in ac.
+                        <h1>LIQUID, Plus qu’une Solution,
+                            <br/>une Résolution !</h1>
+                        <p> LIQUID, La solution ludique et design pour vos cartes
+                            En un clic, dématérialisez, personnalisez, stockez, classez, collectionnez toutes vos cartes en lieu sûr.
+                            En un geste, retrouvez, présentez ou payez.
                             <br/>
                             <br/>
                             Eu, elit consequat neque orci, iaculis egestas sodales. Amet, quam vitae turpis leo
