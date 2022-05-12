@@ -63,16 +63,19 @@ class HomePage extends React.Component {
                         </div>
                     </section>
                     <div className="text">
-                        <h1>LIQUID, Plus qu’une Solution,
-                            <br/>une Résolution !</h1>
-                        <p> LIQUID, La solution ludique et design pour vos cartes
-                            En un clic, dématérialisez, personnalisez, stockez, classez, collectionnez toutes vos cartes en lieu sûr.
+                        <div className="title-group">
+                        <h1 className="title">LIQUID, Plus qu’une Solution,</h1>
+                        <h1 className="title">une Résolution !</h1>
+                        </div>
+                        <p> <span className="red">LIQUID</span>, l'appli pratique, ludique et design pour vos cartes
+                            <br/>
+                            En un clic, dématérialisez, stockez, classez, toutes vos cartes en lieu sûr. <br/>
                             En un geste, retrouvez, présentez ou payez.
                             <br/>
                             <br/>
-                            Eu, elit consequat neque orci, iaculis egestas sodales. Amet, quam vitae turpis leo
-                            facilisis aliquet sit feugiat. Accumsan habitant ultrices sit libero etiam egestas fermentum
-                            purus iaculis.</p>
+                            Un seul numéro d’identification pour un accès rapide et sécurisé. <br/>
+                            <span className="red">LIQUID</span> est un outil qui stocke en ligne, de manière sécurisée, les versions numériques de toutes vos cartes
+                            dans un style élégant et tendance.</p>
                     </div>
 
                 </section>

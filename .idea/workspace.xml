@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62df334b-ae73-4584-a0fa-b752cee4e9ce" name="Changes" comment="">
+    <list default="true" id="62df334b-ae73-4584-a0fa-b752cee4e9ce" name="Changes" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/First_section_About.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/First_section_About.gltf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/First_section_About.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/normal2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/velvet_caracole.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Section_One/sectionOne.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_One/sectionOne.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Three/canvasFirst.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Three/canvasFirst.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_colors.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/_typo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_typo.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +94,7 @@
       <workItem from="1652173539796" duration="18270000" />
       <workItem from="1652195024038" duration="23498000" />
       <workItem from="1652289929122" duration="27148000" />
-      <workItem from="1652371066019" duration="1853000" />
+      <workItem from="1652371066019" duration="6893000" />
     </task>
     <servers />
   </component>
@@ -116,6 +111,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
