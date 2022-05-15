@@ -6,7 +6,8 @@ $title: 4em;
 $title_weight: 600;
 $body_family: Inter;
 $body: 1em;
-$body_weight: 400;
+$body_weight: 500;
+$link : 1em;
 
 body {
   font-size: 16px;
@@ -56,3 +57,11 @@ span {
   color: $secondary;
 }
 
+a {
+  color: $primary;
+  font-family: $body_family;
+  font-size: $link;
+  font-weight: $body_weight;
+  text-align: left;
+  text-decoration: none;
+}

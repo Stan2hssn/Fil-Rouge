@@ -2,11 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62df334b-ae73-4584-a0fa-b752cee4e9ce" name="Changes" comment="fix">
+      <change afterPath="$PROJECT_DIR$/public/Texture/First_section_About.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Texture/Matcaps.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Texture/texture_section/velvet_caracole.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Texture/velvet_caracole.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/texture_section/velvet_caracole.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/velvet_caracole.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/First_section_About.bin" beforeDir="false" afterPath="$PROJECT_DIR$/public/First_section_About.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/First_section_About.gltf" beforeDir="false" afterPath="$PROJECT_DIR$/public/First_section_About.gltf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/First_section_About.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/First_section_About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Texture/Fabric_sbdkvup0_surface_Preview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Texture/sbdkvup0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Texture/sbdkvup_4K_AO.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Texture/sbdkvup_4K_Albedo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Texture/sbdkvup_4K_Displacement.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Texture/sbdkvup_4K_Displacement.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Texture/sbdkvup_4K_Normal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Texture/sbdkvup_4K_Roughness.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/normal2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/velvet_caracole.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Section_One/sectionOne.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_One/sectionOne.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Section_One/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_One/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Section_Two/sectionTwo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_Two/sectionTwo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Section_Two/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_Two/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Three/canvasFirst.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Three/canvasFirst.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Three/three.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Three/three.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_colors.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/_typo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_typo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Header/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Header/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,11 +66,15 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="28nGRRQDKovwJzTGqWWrUbC7Fdg" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -94,7 +128,7 @@
       <workItem from="1652173539796" duration="18270000" />
       <workItem from="1652195024038" duration="23498000" />
       <workItem from="1652289929122" duration="27148000" />
-      <workItem from="1652371066019" duration="6893000" />
+      <workItem from="1652371066019" duration="59392000" />
     </task>
     <servers />
   </component>
@@ -113,19 +147,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="fix" />
     <option name="LAST_COMMIT_MESSAGE" value="fix" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/Three/canvasFirst.jsx</url>
-          <line>34</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
