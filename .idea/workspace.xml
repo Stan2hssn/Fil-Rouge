@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62df334b-ae73-4584-a0fa-b752cee4e9ce" name="Changes" comment="fix">
+      <change afterPath="$PROJECT_DIR$/src/components/Home/HeaderHero/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Home/HeaderHero/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_typo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_typo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Header/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Header/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Header/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,24 +50,25 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Spheres" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/views" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/views" />
       <recent name="$PROJECT_DIR$/src/components/Spheres" />
       <recent name="$PROJECT_DIR$/src/components/Home/Section_Two" />
       <recent name="$PROJECT_DIR$/src/components/Home/Section_Three" />
       <recent name="$PROJECT_DIR$/src/components/Home" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Home/Header" />
       <recent name="$PROJECT_DIR$/src/components/Home/Section_One" />
       <recent name="$PROJECT_DIR$/src/components/Home/Section_Three" />
       <recent name="$PROJECT_DIR$/src/components/Home/Section_Two" />
       <recent name="$PROJECT_DIR$/src/components/Home" />
-      <recent name="$PROJECT_DIR$/src/scripts" />
     </key>
   </component>
   <component name="RunManager">
@@ -96,7 +101,7 @@
       <workItem from="1652173539796" duration="18270000" />
       <workItem from="1652195024038" duration="23498000" />
       <workItem from="1652289929122" duration="27148000" />
-      <workItem from="1652371066019" duration="61264000" />
+      <workItem from="1652371066019" duration="66889000" />
     </task>
     <servers />
   </component>

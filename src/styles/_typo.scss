@@ -51,6 +51,7 @@ p {
   font-family: $body_family;
   font-weight: $body_weight;
   text-align: left;
+  text-transform: uppercase;
 }
 
 span {
@@ -58,6 +59,15 @@ span {
 }
 
 a {
+  color: $primary;
+  font-family: $body_family;
+  font-size: $link;
+  font-weight: $body_weight;
+  text-align: left;
+  text-decoration: none;
+}
+
+ul {
   color: $primary;
   font-family: $body_family;
   font-size: $link;

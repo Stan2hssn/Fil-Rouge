@@ -8,6 +8,9 @@ class Header extends React.Component {
         this.state = {position: 0};
     }
 
+
+    /*
+
     componentDidMount() {
         window.addEventListener("scroll", this.listenToScroll);
     }
@@ -43,22 +46,23 @@ class Header extends React.Component {
             header.classList.remove('scroll');
         }
 
-    };
+    };*/
 
 
     render() {
-
-        console.log(this.state.position)
         return (
             <>
-                <div className="position">
+                <div className="sectionHeader">
                     <header>
                         <Link className="logo" to="/"></Link>
-                        {this.state.position}
-                        {/*<nav>
-          <Link to="/">Home</Link>
-          <Link to="/cards">Cards</Link>
-        </nav>*/}
+                        <nav>
+                            <ul>
+                                <li>Fil-rouge</li>
+                                <li>Liquid</li>
+                                <li>Cards</li>
+                            </ul>
+                        </nav>
+                        <Link className="discover" to="/Cards">Discover</Link>
                     </header>
                 </div>
             </>
