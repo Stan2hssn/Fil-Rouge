@@ -80,7 +80,7 @@ class HomePage extends React.Component {
                                 <h1 className="title">LIQUID, Plus qu’une Solution,</h1>
                                 <h1 className="title">une Résolution !</h1>
                             </div>
-                            <p><span className="red">LIQUID</span>, l'appli pratique, ludique et design pour vos cartes
+                            <p><span className="red">LIQUID</span>, l'appli pratique, ludique et design pour vos <span className="red">cartes</span>.
                                 <br/>
                                 En un clic, dématérialisez, stockez, classez, toutes vos cartes en lieu sûr. <br/>
                                 En un geste, retrouvez, présentez ou payez.
