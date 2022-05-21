@@ -55,7 +55,7 @@ const CanvasFirst = () => {
         <Canvas id={"first"} antialias="false">
             < Suspense fallback={null}>
                 <ambientLight color="lightblue" intensity={0.4}/>
-                <pointLight color="lightblue" intensity={1.5} position={[0, 30, 0]}/>
+                <pointLight color="lightblue" intensity={1.6} position={[0, 30, 0]}/>
                 <pointLight color="lightblue" intensity={0.9} position={[10, -10, 10]}/>
                 <Model antialiased="true"/>
                 <gridHelper/>

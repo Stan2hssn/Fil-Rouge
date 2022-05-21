@@ -1,8 +1,26 @@
 import React from 'react';
 import './style.scss';
+import {gsap} from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 import CanvasFirst from '../../Three/canvasFirst'
 
 const SectionOne = () => {
+
+/*
+    gsap.registerPlugin(ScrollTrigger)
+
+    gsap.to('.SectionOne', {
+        scrollTrigger: {
+            trigger: '.SectionOne',
+            start: 'top top',
+            end: 'top top',
+            markers: true,
+            scrub: true,
+        }, position: "fixed", top: '0', opacity: '1'
+    });
+
+*/
+
     return (
         <div className="SectionOne">
             <CanvasFirst />

@@ -1,9 +1,16 @@
+@import "../../styles/_colors.scss";
+
+
 .sectionHeader {
-  position: fixed;
+  position: absolute;
+  top: 100vh;
   width: calc(100% - 16em);
   height: 6em;
   padding-top: 2em;
   margin: 0 8em 0 8em;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
 
   header {
     position: relative;
@@ -28,6 +35,27 @@
       display: flex;
       flex-direction: row;
       gap: 4em;
+    }
+
+    .discover {
+      text-transform: uppercase;
+      padding: 0.5em 1.7em;
+      border-radius: 3.1em;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      background-color: rgba(241, 241, 241, 0);
+      -webkit-box-shadow: inset 0 0 0 0.1em rgba(250, 75, 75, 0);
+      -moz-box-shadow: inset 0 0 0 0.1em rgba(250, 75, 75, 0);
+      box-shadow: inset 0 0 0 0.1em rgba(250, 75, 75, 0);
+      transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+    }
+
+    .discover:hover {
+      background-color: rgba(241, 241, 241, 0.1);
+      -webkit-box-shadow: inset 0 0 0 0.1em rgba(250, 75, 75, 1);
+      -moz-box-shadow: inset 0 0 0 0.1em rgba(250, 75, 75, 1);
+      box-shadow: inset 0 0 0 0.1em rgba(250, 75, 75, 1);
+      transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
     }
   }
 }
