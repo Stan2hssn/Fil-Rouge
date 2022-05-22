@@ -1,15 +1,19 @@
 
-  .SectionOne {
-    height: 100vh !important;
-    margin-left: 8em;
-  }
+.SectionOne {
+  position: relative;
+  height: 100vh !important;
+  width: 100vw;
+  background: radial-gradient(50% 180% at 50% 50%, #252423 0%, #1A1918 50%, #242423 100%) no-repeat;
+  z-index: -9999 !important;
+}
 
 
 #first {
   position: absolute !important;
+  left: 0;
   height: 100vh;
-  width: calc(100% - 8em) !important;
-  z-index: -9999 !important;
+  width: 100% ;
+  z-index: -9998 !important;
 }
 
 .section_text {
@@ -18,4 +22,5 @@
   padding-top: 13em;
   width: 38em;
   gap: 4em;
+  margin-left: 8em;
 }

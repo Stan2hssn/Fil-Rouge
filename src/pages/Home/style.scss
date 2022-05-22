@@ -2,6 +2,8 @@
 @import '../../styles/_spacing';
 @import '../../styles/_typo';
 
+
+
 #Hero {
   height: calc(100vh - 13em);
   margin-right: 8em;
@@ -106,6 +108,7 @@
     gap: 1em;
     padding-bottom: 2em;
     text-decoration: none;
+    cursor: pointer;
 
     .arrow {
       width: 1em;

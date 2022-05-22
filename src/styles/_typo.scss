@@ -7,7 +7,7 @@ $title_weight: 600;
 $body_family: Inter;
 $body: 1em;
 $body_weight: 500;
-$link : 1em;
+$link: 1em;
 
 body {
   font-size: 16px;
@@ -24,10 +24,12 @@ h1 {
   white-space: nowrap;
   z-index: 2;
 }
+
 .title-group {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+
   .title {
     margin: 0;
     background: linear-gradient(transparent,
@@ -45,6 +47,7 @@ h1 {
     background-size: 0 0.1em, 100% 0.05em;
   }
 }
+
 p {
   line-height: 1.5em;
   color: $primary;
@@ -68,6 +71,15 @@ a {
 }
 
 ul {
+  color: $primary;
+  font-family: $body_family;
+  font-size: $link;
+  font-weight: $body_weight;
+  text-align: left;
+  text-decoration: none;
+}
+
+div{
   color: $primary;
   font-family: $body_family;
   font-size: $link;

@@ -8,6 +8,9 @@ import SectionThree from "../../components/Home/Section_Three/sectionThree";
 import CardHero from "../../components/Card_hero/index"
 import Header from "../../views/Header/index"
 import {Link} from "react-router-dom";
+import useState from 'react-router'
+import gsap from "gsap";
+import {ScrollToPlugin} from "gsap/ScrollToPlugin";
 import scrollDetector from 'scroll-detector';
 import "./style.scss";
 
@@ -19,15 +22,21 @@ class HomePage extends React.Component {
             xPos: 0,
             yPos: 0,
         };
+
+        this.handleClick = this.handleClick.bind(this);
     }
 
 
     componentDidMount() {
-        window.addEventListener("mousemove", this.parallax);
+        const hero = document.querySelector('#Hero');
+
+        hero.addEventListener("mousemove", this.parallax);
     }
 
     componentWillUnmount() {
-        window.removeEventListener("mousemove", this.parallax);
+        const hero = document.querySelector('#Hero');
+
+        hero.removeEventListener("mousemove", this.parallax);
     }
 
     parallax = (e) => {
@@ -38,15 +47,11 @@ class HomePage extends React.Component {
         this.setState({xPos: x > 1 ? 1 : x, yPos: y < -1 ? -1 : y});
     };
 
- /*   push() {
-
-        const home = document.querySelector('#hero');
-
-        this.setState({h: home.offsetHeight});
-
-
-    }*/
-
+    handleClick = (e) => {
+        console.log("hello")
+        gsap.registerPlugin(ScrollToPlugin)
+        gsap.to(window, {duration: 0, scrollTo: ".SectionOne"});
+    }
 
 
 
@@ -78,9 +83,10 @@ class HomePage extends React.Component {
                         <div className="text">
                             <div className="title-group">
                                 <h1 className="title">LIQUID, Plus qu’une Solution,</h1>
-                                <h1 className="title">une Résolution !</h1>
+                                <h1 className="title">une Résolution</h1>
                             </div>
-                            <p><span className="red">LIQUID</span>, l'appli pratique, ludique et design pour vos <span className="red">cartes</span>.
+                            <p><span className="red">LIQUID</span>, l'appli pratique, ludique et design pour vos <span
+                                className="red">cartes</span>.
                                 <br/>
                                 En un clic, dématérialisez, stockez, classez, toutes vos cartes en lieu sûr. <br/>
                                 En un geste, retrouvez, présentez ou payez.
@@ -92,8 +98,8 @@ class HomePage extends React.Component {
                                 dans un style élégant et tendance.</p>
                         </div>
                     </section>
-                    <div className="aboutUs">
-                        <Link to="/cards">About us</Link>
+                    <div onClick={this.handleClick} className="aboutUs">
+                        <div >About us</div>
                         <div className="arrow"></div>
                     </div>
                 </section>
