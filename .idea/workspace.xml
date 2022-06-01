@@ -10,10 +10,6 @@
       <change afterPath="$PROJECT_DIR$/src/Hooks/sphereAnimation.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Hooks/sphereAnimationThree.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Hooks/sphereAnimationTwo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Card_hero/CardHero.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Card_hero/CardHero2.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Card_hero/CardHero3.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sections/index.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/Sections/style.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/Three/canvasSecond.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -27,16 +23,19 @@
       <change beforePath="$PROJECT_DIR$/src/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Card/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card_hero/CardHero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card_hero/CardHero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card_hero/CardHero2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card_hero/CardHero2.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card_hero/CardHero3.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card_hero/CardHero3.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Card_hero/index.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Card_hero/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card_hero/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/HeaderHero/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HeaderHero/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/HeaderHero/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HeaderHero/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Section_One/sectionOne.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_One/sectionOne.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/Section_One/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_One/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/Section_Three/sectionThree.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_Three/sectionThree.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/Section_Three/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_Three/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/Section_Two/sectionTwo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_Two/sectionTwo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/Section_Two/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_Two/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sections/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Spheres/sphereAnimation.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Spheres/sphereAnimationThree.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Spheres/sphereAnimationTwo.js" beforeDir="false" />
@@ -187,14 +186,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/pages/Home/index.jsx</url>
-          <line>123</line>
+          <line>129</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/pages/Home/index.jsx</url>
-          <line>98</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

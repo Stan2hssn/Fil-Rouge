@@ -32,16 +32,15 @@ export default function Home() {
     const [three, setThree] = useState(false);
     const [xPos, setXpos] = useState(0);
     const [yPos, setYpos] = useState(0);
-
+    const [top, setTop] = useState(0);
 
     useEffect(() => {
         const section2offsetYTop = section2Ref.current.getBoundingClientRect().top;
         const rect = parallaxContainer.current.getBoundingClientRect();
         const scroller = document.querySelector('.rules');
+        const Hero = document.querySelector('#Hero');
         const {scrollY} = window;
-/*
-        scroller.addEventListener('mousemove', parallax)
-*/
+        Hero.addEventListener('mousemove', parallax)
         scroller.addEventListener("scroll", handleScroll, {passive: true});
     }, []);
 
@@ -75,6 +74,7 @@ export default function Home() {
         const section2offsetYTop = section2Ref.current.getBoundingClientRect().top;
         const section = section2Ref.current.getBoundingClientRect().height;
 
+        setTop(section2offsetYTop)
 
         if (section2offsetYTop <= 0) {
             setVisible(true);
@@ -88,10 +88,16 @@ export default function Home() {
             setOne(false);
         }
 
-        if (section2offsetYTop <= -section) {
+        if (section2offsetYTop <= (-section * 2)) {
             setTwo(true);
         } else {
             setTwo(false);
+        }
+
+        if (section2offsetYTop <= (-section * 3)) {
+            setThree(true);
+        } else {
+            setThree(false);
         }
 
     }
@@ -148,7 +154,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <Sections visible={visible} one={one} two={two} three={three}/>
+            <Sections visible={visible} one={one} two={two} three={three} top={top}/>
 
             <div style={{position: 'fixed', background: 'red', top: 0}}>
             </div>
@@ -167,6 +173,5 @@ export default function Home() {
 
         </div>
 
-    </>)
-        ;
+    </>);
 }

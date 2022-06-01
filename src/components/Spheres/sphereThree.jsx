@@ -13,7 +13,8 @@ export default function SphereThree() {
     const [scale, setScale] = useState(1);
 
     useEffect(() => {
-        window.addEventListener("mousemove", animation);
+        const win = document.querySelector('#Hero');
+        win.addEventListener("mousemove", animation);
     }, [])
 
     useEffect(() => {

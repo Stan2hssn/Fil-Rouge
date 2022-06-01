@@ -18,8 +18,8 @@ export default function CardHero() {
     const [rot, setRot] = useState(296);
 
     useEffect(() => {
-
-        window.addEventListener("mousemove", animation);
+        const win = document.querySelector('#Hero');
+        win.addEventListener("mousemove", animation);
     })
 
     function animation(e) {

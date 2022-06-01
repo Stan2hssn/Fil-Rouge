@@ -40,11 +40,13 @@
         gap: 16px;
         .progress-bar {
           width: 100%;
+          overflow: hidden;
 
           .inner-progress {
             background-color: $secondary;
             width: 0%;
             height: 0.125em;
+            transition: all 0.1s ease-out;
           }
         }
       }
@@ -77,4 +79,9 @@
   position: fixed;
   opacity: 1;
   transition: opacity 0.5s ease-out;
+}
+
+.end {
+  transform: translateX(100%);
+  transition: all 0.4s ease-out !important;
 }
