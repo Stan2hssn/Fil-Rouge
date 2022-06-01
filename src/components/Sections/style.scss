@@ -1,0 +1,61 @@
+.sections {
+  position: relative;
+  top: 0;
+  background: radial-gradient(
+                  50% 180% at 50% 50%,
+                  #252423 0%,
+                  #1a1918 50%,
+                  #242423 100%
+  ) no-repeat;
+  z-index: 10;
+}
+
+.sections::-webkit-scrollbar,
+.sections::-webkit-scrollbar {
+  display: none;
+}
+
+
+.wireframe {
+  background-color: transparent !important;
+  height: 100vh;
+  width: 100vw;
+}
+
+.sections-wireframe {
+  position: relative;
+  top: 0;
+  z-index: -9999 !important;
+}
+
+.fade-sectionOne {
+  opacity: 0;
+  transition: all 0.2s ease-out;
+}
+
+.fade-title-after {
+  transform: translateY(-100%);
+  transition: all 0.2s ease-out;
+}
+
+.fade-body-after {
+  transform: translateY(-120%);
+  transition: all 0.2s ease-out;
+}
+
+.fade_SectionTwo {
+  opacity: 0 !important;
+  transition: all 0.2s ease-out 0.2s;
+}
+
+.fade-title-before {
+  transform: translateY(200%);
+  transition: all 0.2s ease-out 0.2s;
+
+}
+
+.fade-body-before {
+  transform: translateY(120%);
+  transition: all 0.2s ease-out 0.5s;
+
+}

@@ -1,15 +1,28 @@
-@use '../../styles/_colors.scss';
+@use "../../styles/_colors.scss";
 
 .animation-wrapper {
   position: relative;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 200px;
   height: 200px;
 
+  .sphere-animationFirst {
+    position: relative;
+    width: 9.3em;
+    height: 9.3em;
+    margin: 0;
+  }
 
-  .sphere-animation {
+  .sphere-animationTwo {
+    position: relative;
+    width: 9.3em;
+    height: 9.3em;
+    margin: 0;
+  }
+
+  .sphere-animationThree {
     position: relative;
     width: 9.3em;
     height: 9.3em;
@@ -19,12 +32,12 @@
   .sphere path {
     fill: url(#sphereGradient);
     stroke-width: 2px;
-    stroke: rgba(80, 80, 80, .35);
+    stroke: rgba(80, 80, 80, 0.35);
   }
 }
 .first {
   transform: scale(1.2) translate(-8em, -9em);
-
+  transition: all 0.2s ease-out;
 }
 
 .two {
@@ -33,13 +46,16 @@
     height: 11.3em;
   }
   transform: translate(-17em, 8em);
+  transition: all 0.2s ease-out;
 }
 
-.three {.sphere-animation {
-  width: 9em;
-  height: 9em;
-}
+.three {
+  .sphere-animation {
+    width: 9em;
+    height: 9em;
+  }
   transform: translate(9em, 3em);
+  transition: all 0.2s ease-out;
 }
 
 @media (min-width: 500px) {

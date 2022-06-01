@@ -2,16 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62df334b-ae73-4584-a0fa-b752cee4e9ce" name="Changes" comment="fix">
+      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Second_section_About.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Second_section_About.gltf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Second_section_About.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hooks/sphereAnimation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hooks/sphereAnimationThree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hooks/sphereAnimationTwo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Card_hero/CardHero.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Card_hero/CardHero2.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Card_hero/CardHero3.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sections/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sections/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Three/canvasSecond.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/First_section_About.gltf" beforeDir="false" afterPath="$PROJECT_DIR$/public/First_section_About.gltf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/First_section_About.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/First_section_About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/velvet_caracole.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card_hero/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card_hero/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card_hero/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/HeaderHero/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HeaderHero/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/HeaderHero/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HeaderHero/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/Section_One/sectionOne.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_One/sectionOne.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/Section_One/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_One/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Section_Three/sectionThree.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_Three/sectionThree.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Section_Three/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_Three/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Section_Two/sectionTwo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_Two/sectionTwo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/Section_Two/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_Two/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Spheres/sphereAnimation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Spheres/sphereAnimationThree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Spheres/sphereAnimationTwo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Spheres/sphereOne.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Spheres/sphereOne.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Spheres/sphereThree.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Spheres/sphereThree.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Spheres/sphereTwo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Spheres/sphereTwo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Spheres/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Spheres/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Three/canvasFirst.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Three/canvasFirst.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Card/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Card/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Card/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Card/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Cards/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cards/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Cards/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cards/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportWebVitals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_colors.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/_typo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_typo.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Header/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Header/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,28 +101,28 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Card_hero" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Card_hero" />
+      <recent name="$PROJECT_DIR$/src/components/Three" />
+      <recent name="$PROJECT_DIR$/src/components/Home" />
       <recent name="$PROJECT_DIR$/src/views" />
       <recent name="$PROJECT_DIR$/src/components/Spheres" />
-      <recent name="$PROJECT_DIR$/src/components/Home/Section_Two" />
-      <recent name="$PROJECT_DIR$/src/components/Home/Section_Three" />
-      <recent name="$PROJECT_DIR$/src/components/Home" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components/Home/Header" />
       <recent name="$PROJECT_DIR$/src/components/Home/Section_One" />
       <recent name="$PROJECT_DIR$/src/components/Home/Section_Three" />
-      <recent name="$PROJECT_DIR$/src/components/Home/Section_Two" />
-      <recent name="$PROJECT_DIR$/src/components/Home" />
     </key>
   </component>
   <component name="RunManager">
@@ -108,7 +156,10 @@
       <workItem from="1652195024038" duration="23498000" />
       <workItem from="1652289929122" duration="27148000" />
       <workItem from="1652371066019" duration="66889000" />
-      <workItem from="1652907431446" duration="42617000" />
+      <workItem from="1652907431446" duration="60213000" />
+      <workItem from="1653578951089" duration="3116000" />
+      <workItem from="1653582385616" duration="32054000" />
+      <workItem from="1653740590060" duration="56647000" />
     </task>
     <servers />
   </component>
@@ -136,11 +187,20 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/pages/Home/index.jsx</url>
-          <line>82</line>
+          <line>123</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/Home/index.jsx</url>
+          <line>98</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

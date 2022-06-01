@@ -1,19 +1,37 @@
 .card-container {
   top: 238px;
   left: 403.64px;
-  background: url(../../../src/Assets/Cards_intro/Verso_Octopus.png) no-repeat center;
+  background: url(../../../src/Assets/Cards_intro/Verso_Octopus.png) no-repeat
+    center;
   background-size: cover;
   border-radius: 15px;
+}
+
+.firstCard {
+  transform: translate(26em, 9em) rotate3d(2, 1, 2, 296deg);
+  transition: all 0.3s ease-out;
+}
+
+.secondCard {
+  transform: translate(6em, 2em) rotate3d(1, 1, 1, 320deg);
+  transition: all 0.2s ease-out;
+}
+
+.thirdCard {
   transform: translate(-11em, -3em) rotate3d(2, 1, 1, 360deg);
+  transition: all 0.2s ease-out;
 
 }
 
 .gradient {
   width: 218px;
   height: 385px;
-  background: radial-gradient(115.13% 62.8% at -18.86% 2.7%, rgba(250, 238, 238, 0.2) 0%, rgba(0, 0, 0, 0) 50%);
-  opacity:1;
+  background: radial-gradient(
+    115.13% 62.8% at -18.86% 2.7%,
+    rgba(250, 238, 238, 0.2) 0%,
+    rgba(0, 0, 0, 0) 50%
+  );
+  opacity: 1;
   z-index: 9999;
   border-radius: 15px;
-
 }

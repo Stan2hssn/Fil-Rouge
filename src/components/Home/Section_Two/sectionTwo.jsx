@@ -1,21 +1,40 @@
-import React from 'react';
-import "./style.scss"
+import React from "react";
+import CanvasSecond from "../../Three/canvasSecond";
+import "./style.scss";
 
-const SectionTwo = () => {
+export default function SectionTwo({one, two, visible}) {
+
+    let sectionTwo = "SectionTwo fade_SectionTwo none2";
+    let title2 = 'title2 fade-title-before';
+    let body2 = 'body2 fade-body-before';
+
+    if (visible) {
+        sectionTwo = 'SectionTwo fade_SectionTwo';
+    } else {
+        sectionTwo = 'SectionTwo fade_SectionTwo none2'
+    }
+
+    if (one) {
+        sectionTwo = 'SectionTwo';
+        title2 = 'title2';
+        body2 = 'body2';
+    }
+
     return (
-        <div className="sectionTwo">
+        <div className={sectionTwo}>
+            <CanvasSecond/>
             <div className="section_text">
-                <h1>Projet fil-rouge</h1>
-                <p>Projet phare du bachelor “web et mobile” aux Gobelins, l’école de l’image.
-                    Son objectif : Offrir l'opportunité de valider les compétences acquises au cours de l’année.
+                <h1 className={title2}>Liquid</h1>
+                <p className={body2}>
+                    Plus qu’une solution, une résolution, <span>LIQUID</span> permet la dématérialisation de toutes
+                    vos cartes
+                    encombrantes sous la forme de “liquid card” interactive.
                     <br/>
                     <br/>
-                    Chaque étudiant est libre de traiter le domaine qu’il souhaite.
-                    Seul ou en groupe, les participants disposent de plusieurs semaines pour établir, développer et présenter leurs
-                    créations.</p>
+                    Puissante et sans risque, la beauté de nos cartes reflète aussi bien la sécurité que le bon
+                    goût.
+                </p>
             </div>
         </div>
     );
 };
-
-export default SectionTwo;
