@@ -16,7 +16,7 @@ export default function SphereOne() {
         sphereAnimation();
         const win = document.querySelector('#Hero');
         win.addEventListener("mousemove", animation);
-    }, [sphereAnimationTwo]);
+    }, [sphereAnimation]);
 
 
 
