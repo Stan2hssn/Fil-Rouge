@@ -1,4 +1,4 @@
-export default {
+const Data = {
   first: {
     sphereAnimation: {
       target: "First",
@@ -51,3 +51,4 @@ export default {
     target: "Three",
   },
 };
+export default Data;
