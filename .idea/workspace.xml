@@ -2,10 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62df334b-ae73-4584-a0fa-b752cee4e9ce" name="Changes" comment="fix">
-      <change afterPath="$PROJECT_DIR$/public/velvet_caracole.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/Three/First_section_About.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/Three/First_section_About.gltf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/Three/First_section_About.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/Three/Second_section_About.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/Three/Second_section_About.gltf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/Three/velvet_caracole.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/First_section_About.bin" beforeDir="false" afterPath="$PROJECT_DIR$/public/First_section_About.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/First_section_About.gltf" beforeDir="false" afterPath="$PROJECT_DIR$/public/First_section_About.gltf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/First_section_About.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/First_section_About.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/First_section_About.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Second_section_About.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Second_section_About.gltf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Texture/First_section_About.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Texture/Matcaps.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Texture/texture_section/velvet_caracole.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Texture/velvet_caracole.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/texture_section/velvet_caracole.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/velvet_caracole.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Section_One/sectionOne.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_One/sectionOne.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Section_Two/sectionTwo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_Two/sectionTwo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Spheres/sphereOne.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Spheres/sphereOne.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Spheres/sphereThree.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Spheres/sphereThree.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Spheres/sphereTwo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Spheres/sphereTwo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Three/canvasFirst.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Three/canvasFirst.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +126,7 @@
       <workItem from="1653578951089" duration="3116000" />
       <workItem from="1653582385616" duration="32054000" />
       <workItem from="1653740590060" duration="56647000" />
-      <workItem from="1654161030082" duration="9547000" />
+      <workItem from="1654161030082" duration="11846000" />
     </task>
     <servers />
   </component>

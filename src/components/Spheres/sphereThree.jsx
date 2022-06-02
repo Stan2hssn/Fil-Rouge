@@ -13,10 +13,10 @@ export default function SphereThree() {
     const [scale, setScale] = useState(1);
 
     useEffect(() => {
+        sphereAnimationThree();
         const win = document.querySelector('#Hero');
         win.addEventListener("mousemove", animation);
-        sphereAnimationThree();
-    });
+    }, [sphereAnimationTwo]);
 
     function animation(e) {
 

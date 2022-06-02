@@ -14,11 +14,11 @@ export default function SphereTwo() {
     const [scale, setScale] = useState(1.1);
 
     useEffect(() => {
+        sphereAnimationTwo();
         const win = document.querySelector('#Hero');
         win.addEventListener("mousemove", animation);
-        sphereAnimationTwo();
 
-    })
+    }, [sphereAnimationTwo])
 
     function animation(e) {
 
