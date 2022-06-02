@@ -17,7 +17,7 @@ export default function Sections({visible, one, two, three, top}) {
             <Header visible={visible} one={one} two={two} three={three} top={top}/>
 
 
-            <SectionOne one={one}/>
+            <SectionOne one={one} two={two}/>
 
 
             <SectionTwo one={one} two={two} visible={visible}/>

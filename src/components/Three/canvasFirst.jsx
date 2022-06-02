@@ -82,11 +82,17 @@ function Model({ ...props }) {
   );
 }
 
-const CanvasFirst = () => {
+export default function CanvasFirst({one, two}) {
+
+  let none = "";
+
+  if (two) {
+    return null;
+  }
   /*    console.log(Model)*/
   return (
-    <Canvas id={"first"} antialias="false">
-      <Suspense fallback={null}>
+    <Canvas id={"first"} className={none}  antialias="false">
+      <Suspense className={none} fallback={null}>
         <ambientLight color="lightblue" intensity={0.4} />
         <pointLight color="lightblue" intensity={1.6} position={[0, 30, 0]} />
         <pointLight
@@ -101,4 +107,3 @@ const CanvasFirst = () => {
   );
 };
 
-export default CanvasFirst;

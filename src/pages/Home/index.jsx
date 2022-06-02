@@ -44,27 +44,25 @@ export default function Home() {
         scroller.addEventListener("scroll", handleScroll, {passive: true});
     }, []);
 
+    function scrollAbout() {
+        console.log("hello")
+    };
+
     function parallax(e) {
         const rect = parallaxContainer.current.getBoundingClientRect();
 
         let x = (e.clientX - (rect.width / 2 + rect.left));
         let y = (e.clientY - (rect.height / 2 + rect.top)) / 100;
 
-        if (x > 1) {
-            x = 1
-        }
+        x = x > 1 ? 1 : x;
 
-        if (y > 1) {
-            y = 1
-        }
 
-        if (x < -1) {
-            x = -1
-        }
+        y = y > 1 ? 1 : y;
 
-        if (y < -1) {
-            y = -1
-        }
+        x = x < -1 ? -1 : x
+
+        y = y < -1 ? -1 : y
+
         setXpos(x)
         setYpos(y)
 
@@ -148,7 +146,7 @@ export default function Home() {
                         </p>
                     </div>
                 </section>
-                <div className="aboutUs">
+                <div onClick={scrollAbout} className="aboutUs">
                     <div>About us</div>
                     <div className="arrow"></div>
                 </div>

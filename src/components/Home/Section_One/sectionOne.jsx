@@ -2,11 +2,12 @@ import React from "react";
 import "./style.scss";
 import CanvasFirst from "../../Three/canvasFirst";
 
-export default function SectionOne({one}) {
+export default function SectionOne({one, two}) {
 
     let sectionOne = 'SectionOne';
     let title = 'title';
     let body = 'body';
+    let first = 'first'
 
 
     if (one) {
@@ -17,7 +18,7 @@ export default function SectionOne({one}) {
 
     return (
         <div className={sectionOne}>
-            <CanvasFirst one={one}/>
+            <CanvasFirst one={one} two={two}/>
             <div className="section_text">
                 <h1 className={title}>Projet fil-rouge</h1>
                 <p className={body}>
