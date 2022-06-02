@@ -12,9 +12,8 @@ function Model({ ...props }) {
     actions.Animation.play();
   });
 
-  materials["Material.001"].metalness = 0.2;
+  materials["Material.001"].metalness = 0.1;
   materials["Material.001"].roughnessness = 1;
-  materials["Material.001"].roughnessnessMap = 20;
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene" position={(0, 0, 0)}>
