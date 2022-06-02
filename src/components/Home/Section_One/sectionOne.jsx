@@ -17,7 +17,7 @@ export default function SectionOne({one, two}) {
 
     return (
         <div className={sectionOne}>
-           {/* <CanvasFirst one={one} two={two}/>*/}
+            <CanvasFirst one={one} two={two}/>
             <div className="section_text">
                 <h1 className={title}>Projet fil-rouge</h1>
                 <p className={body}>

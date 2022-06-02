@@ -22,7 +22,7 @@ export default function SectionTwo({one, two, visible}) {
 
     return (
         <div className={sectionTwo}>
-            {/*<CanvasSecond/>*/}
+            <CanvasSecond/>
             <div className="section_text">
                 <h1 className={title2}>Liquid</h1>
                 <p className={body2}>

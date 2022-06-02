@@ -5,7 +5,7 @@ import {PerspectiveCamera, useAnimations, useGLTF,} from "@react-three/drei";
 
 function Model({ ...props }) {
     const group = useRef()
-    const { nodes, materials, animations } = useGLTF('/Second_section_About.gltf')
+    const { nodes, materials, animations } = useGLTF('/Three/Second_section_About.gltf')
     const { actions } = useAnimations(animations, group)
 
     useEffect(() => {
