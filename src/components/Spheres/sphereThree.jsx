@@ -15,11 +15,8 @@ export default function SphereThree() {
     useEffect(() => {
         const win = document.querySelector('#Hero');
         win.addEventListener("mousemove", animation);
-    }, [])
-
-    useEffect(() => {
         sphereAnimationThree();
-    }, [sphereAnimationThree.js]);
+    });
 
     function animation(e) {
 

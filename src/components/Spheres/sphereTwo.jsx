@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React, {useState} from "react";
 import {useEffect} from "react";
 import sphereAnimationTwo from "../../Hooks/sphereAnimationTwo";
 import "./style.scss";
@@ -16,11 +16,9 @@ export default function SphereTwo() {
     useEffect(() => {
         const win = document.querySelector('#Hero');
         win.addEventListener("mousemove", animation);
-    }, [])
+        sphereAnimationTwo();
 
-     useEffect(() => {
-            sphereAnimationTwo();
-        }, [sphereAnimationTwo.js]);
+    })
 
     function animation(e) {
 

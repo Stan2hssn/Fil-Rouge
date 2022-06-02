@@ -1,4 +1,4 @@
-import anime from "animejs/lib/anime.es.js";
+import anime from "animejs";
 
 const fitElementToParent = (el, padding) => {
   let timeout = null;

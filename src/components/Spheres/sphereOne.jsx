@@ -15,11 +15,8 @@ export default function SphereOne() {
     useEffect(() => {
         const win = document.querySelector('#Hero');
         win.addEventListener("mousemove", animation);
-    }, [])
-
-    useEffect(() => {
         sphereAnimation();
-    }, [sphereAnimation.js]);
+    });
 
 
 

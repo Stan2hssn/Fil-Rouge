@@ -7,7 +7,6 @@ export default function SectionOne({one, two}) {
     let sectionOne = 'SectionOne';
     let title = 'title';
     let body = 'body';
-    let first = 'first'
 
 
     if (one) {

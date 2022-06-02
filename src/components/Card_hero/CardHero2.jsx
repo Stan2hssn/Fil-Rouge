@@ -8,8 +8,6 @@ export default function CardHero2() {
     let xPosition;
     let YPosition;
     let xRotation;
-    let yRotation;
-    let zRotation;
     let rotation;
 
     const [xPos, setxPos] = useState(6);
@@ -36,11 +34,12 @@ export default function CardHero2() {
         xRotation = 1 + ratioX;
         rotation = 320 + -(ratio * 5);
 
-
         setxPos(xPosition)
         setyPos(YPosition)
         setxRotate(xRotation)
         setRot(rotation)
+        setyRotate(1);
+        setzRotate(1);
 
     }
 

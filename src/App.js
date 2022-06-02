@@ -1,5 +1,4 @@
 import "./App.scss";
-import react from "react"
 import Router from "./Router";
 
 function App() {

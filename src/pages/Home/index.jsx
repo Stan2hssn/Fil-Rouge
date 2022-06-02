@@ -11,21 +11,12 @@ import {Link} from "react-router-dom";
 import "./style.scss";
 
 export default function Home() {
-    const sectionOne = document.querySelector('.SectionOne');
-
 
     const parallaxContainer = useRef(null);
     const scroller = useRef()
     const section1Ref = useRef();
     const section2Ref = useRef();
-    const section3Ref = useRef();
-    const section4Ref = useRef();
 
-
-    const sectionTwo = useRef();
-    const sectionThree = useRef();
-
-    const [currentSection, setCurrentSection] = useState(section1Ref);
     const [visible, setVisible] = useState(false);
     const [one, setOne] = useState(false);
     const [two, setTwo] = useState(false);
@@ -35,11 +26,8 @@ export default function Home() {
     const [top, setTop] = useState(0);
 
     useEffect(() => {
-        const section2offsetYTop = section2Ref.current.getBoundingClientRect().top;
-        const rect = parallaxContainer.current.getBoundingClientRect();
         const scroller = document.querySelector('.rules');
         const Hero = document.querySelector('#Hero');
-        const {scrollY} = window;
         Hero.addEventListener('mousemove', parallax)
         scroller.addEventListener("scroll", handleScroll, {passive: true});
     }, []);

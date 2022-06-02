@@ -30,6 +30,9 @@ export default function CardHero3() {
         xPosition = -11 + (ratioX * 3);
         YPosition = -3 + (ratioY * 2);
         rotation = 360 + -(ratio * 31);
+        setxRotate(2);
+        setyRotate(1);
+        setzRotate(1);
 
 
         setxPos(xPosition)

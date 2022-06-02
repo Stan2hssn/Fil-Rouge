@@ -1,8 +1,6 @@
 import "./three.scss";
-import * as THREE from "three";
-import { materials } from "three/src/materials/Materials.js";
-import { Suspense, React, useRef, useState, useEffect } from "react";
-import { Canvas, Camera, useFrame, useThree } from "@react-three/fiber";
+import { Suspense, React, useRef, useEffect } from "react";
+import { Canvas } from "@react-three/fiber";
 import {PerspectiveCamera, useAnimations, useGLTF,} from "@react-three/drei";
 
 function Model({ ...props }) {

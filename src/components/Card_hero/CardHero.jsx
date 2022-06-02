@@ -36,7 +36,8 @@ export default function CardHero() {
         setyPos(yPosition)
         setxRotate(xRotation)
         setyRotate(yRotation)
-
+        setzRotate(2);
+        setRot(296);
 
     }
 

@@ -1,7 +1,6 @@
 import "./three.scss";
 import {React, Suspense, useEffect, useRef} from "react";
 import {Canvas} from "@react-three/fiber";
-import { materials } from "three/src/materials/Materials.js";
 import {PerspectiveCamera, useAnimations, useGLTF,} from "@react-three/drei";
 
 function Model({ ...props }) {
