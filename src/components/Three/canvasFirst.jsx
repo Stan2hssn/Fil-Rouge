@@ -66,7 +66,7 @@ function Model({...props}) {
       ;
 }
 
-useGLTF.preload('../src/AssetsThree/First_section_About.gltf')
+useGLTF.preload('../src/Assets/Three/First_section_About.gltf')
 
 export default function CanvasFirst({one, two}) {
 
