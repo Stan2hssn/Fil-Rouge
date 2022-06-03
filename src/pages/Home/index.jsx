@@ -1,91 +1,21 @@
-import React, { useEffect, useRef, useState } from "react";
-import Data from "./data"
+import React from "react";
+import Data from "./data";
 import HeaderHero from "../../components/Home/HeaderHero/index";
 import Sphere from "../../components/Spheres/sphere";
-import Sections from "../../components/Sections/index";
+import Sections from "./Sections";
 import CardHero from "../../components/Card_hero/CardHero";
-import CardHero2 from "../../components/Card_hero/CardHero2";
-import CardHero3 from "../../components/Card_hero/CardHero3";
-import { Link } from "react-router-dom";
+import Discover from "../../components/Discover";
 import "./style.scss";
 
 export default function Home() {
-  const parallaxContainer = useRef(null);
-  const scroller = useRef();
-  const section1Ref = useRef();
-  const section2Ref = useRef();
-
-  const [visible, setVisible] = useState(false);
-  const [one, setOne] = useState(false);
-  const [two, setTwo] = useState(false);
-  const [three, setThree] = useState(false);
-  const [xPos, setXpos] = useState(0);
-  const [yPos, setYpos] = useState(0);
-  const [top, setTop] = useState(0);
-
-  useEffect(() => {
-    const scroller = document.querySelector(".rules");
-    const Hero = document.querySelector("#Hero");
-    Hero.addEventListener("mousemove", parallax);
-    scroller.addEventListener("scroll", handleScroll, { passive: true });
-  }, []);
 
   function scrollAbout() {
     console.log("hello");
   }
 
-  function parallax(e) {
-    const rect = parallaxContainer.current.getBoundingClientRect();
-
-    let x = e.clientX - (rect.width / 2 + rect.left);
-    let y = (e.clientY - (rect.height / 2 + rect.top)) / 100;
-
-    x = x > 1 ? 1 : x;
-
-    y = y > 1 ? 1 : y;
-
-    x = x < -1 ? -1 : x;
-
-    y = y < -1 ? -1 : y;
-
-    setXpos(x);
-    setYpos(y);
-  }
-
-  function handleScroll() {
-    const section2offsetYTop = section2Ref.current.getBoundingClientRect().top;
-    const section = section2Ref.current.getBoundingClientRect().height;
-
-    setTop(section2offsetYTop);
-
-    if (section2offsetYTop <= 0) {
-      setVisible(true);
-    } else {
-      setVisible(false);
-    }
-
-    if (section2offsetYTop <= -section) {
-      setOne(true);
-    } else {
-      setOne(false);
-    }
-
-    if (section2offsetYTop <= -section * 2) {
-      setTwo(true);
-    } else {
-      setTwo(false);
-    }
-
-    if (section2offsetYTop <= -section * 3) {
-      setThree(true);
-    } else {
-      setThree(false);
-    }
-  }
-
   return (
     <>
-      <div className="rules" ref={scroller}>
+      <div className="rules">
         <section
           style={{
             scrollSnapAlign: "start",
@@ -95,23 +25,13 @@ export default function Home() {
           <HeaderHero />
           <section className="row">
             <section className="illustration_wrapper">
-              <CardHero />
-              <Sphere data={Data.three} />
-              <CardHero2 />
-              <Sphere data={Data.first} />
-              <CardHero3 />
-              <Sphere data={Data.two} />
-              <div className="position">
-                <div
-                  className="parallax-container"
-                  style={{ transform: `translate(${xPos}px, ${yPos}px)` }}
-                  ref={parallaxContainer}
-                ></div>
-
-                <Link className="cache-container" to="/cards">
-                  DECOUVRIR
-                </Link>
-              </div>
+              <CardHero data={Data.card.first} />
+              <Sphere data={Data.sphere.three} />
+              <CardHero data={Data.card.two} />
+              <Sphere data={Data.sphere.first} />
+              <CardHero data={Data.card.three} />
+              <Sphere data={Data.sphere.two} />
+              <Discover />
             </section>
             <div className="text">
               <div className="title-group">
@@ -141,22 +61,7 @@ export default function Home() {
           </div>
         </section>
 
-        <Sections
-          visible={visible}
-          one={one}
-          two={two}
-          three={three}
-          top={top}
-        />
-
-        <div style={{ position: "fixed", background: "red", top: 0 }}></div>
-
-        <section className="snap-y">
-          <div className="wireframe-home hero-section" ref={section1Ref}>
-            <div className="min-h-screen">1</div>
-          </div>
-          <div className="wireframe-home sections" ref={section2Ref}></div>
-        </section>
+        <Sections />
       </div>
     </>
   );

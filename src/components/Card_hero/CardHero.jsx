@@ -1,55 +1,64 @@
-import React, {useEffect, useRef, useState} from "react";
+import React from "react";
 import "./style.scss";
 
-export default function CardHero() {
+class CardHero extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      xPos: props.data.xPos,
+      yPos: props.data.yPos,
+      xRot: props.data.xRot,
+      yRot: props.data.yRot,
+      zRot: props.data.zRot,
+      rot: props.data.rot,
+    };
+  }
 
-    const card1 = useRef(null)
+  componentDidMount() {
+    const win = document.querySelector("#Hero");
+    win.addEventListener("mousemove", (e) => {
+      let xPosition;
+      let yPosition;
+      let xRotation;
+      let yRotation;
+      let rotation;
+      let ratioX;
+      let ratioY;
 
-    let xPosition;
-    let yPosition;
-    let xRotation;
-    let yRotation;
+      ratioX = e.clientX / window.innerWidth;
+      ratioY = e.clientY / window.innerWidth;
+      let ratio = (ratioX + ratioY) / 2;
 
-    const [xPos, setxPos] = useState(26);
-    const [yPos, setyPos] = useState(9);
-    const [xRot, setxRotate] = useState(2);
-    const [yRot, setyRotate] = useState(1);
-    const [zRot, setzRotate] = useState(2);
-    const [rot, setRot] = useState(296);
+      xPosition = this.props.data.xPosition(ratioX);
+      yPosition = this.props.data.yPosition(ratioY);
 
-    useEffect(() => {
-        const win = document.querySelector('#Hero');
-        win.addEventListener("mousemove", animation);
-    })
+      this.setState({xPos: xPosition})
+      this.setState({yPos: yPosition})
 
-    function animation(e) {
+      if (this.props.data.xRotation) xRotation = this.props.data.xRotation(ratioX);
+      if (this.props.data.yRotation) yRotation = this.props.data.yRotation(ratioY);
+      if (this.props.data.rotation) rotation = this.props.data.rotation(ratio);
 
-        let ratioX = e.clientX / window.innerWidth;
-        let ratioY = e.clientY / window.innerWidth;
+      this.setState({xRotate: xRotation || this.props.data.xRot})
+      this.setState({yRotate: yRotation || this.props.data.yRot})
+      this.setState({Rot: rotation || this.props.data.rot})
 
-        xPosition = 25 + (ratioX * 2);
-        yPosition = 7 + -(-ratioY * 5);
-        xRotation = 2 + (ratioX * 1.2);
-        yRotation = 1 + (ratioY * 1.5);
+      if (this.props.data.zRot) this.setState(this.props.data.zRot);
+    });
+  }
 
-        setxPos(xPosition)
-        setyPos(yPosition)
-        setxRotate(xRotation)
-        setyRotate(yRotation)
-        setzRotate(2);
-        setRot(296);
-
-    }
-
+  render() {
     return (
-        <div
-            className="card-container firstCard"
-            style={{
-                transform: `translate(${xPos}em, ${yPos}em) rotate3d(${xRot}, ${yRot}, ${zRot}, ${rot}deg)`,
-            }}
-            ref={card1}
-        >
-            <div className="gradient"></div>
-        </div>
+      <div
+        className={`card-container ${this.props.name}`}
+        style={{
+          transform: `translate(${this.state.xPos}em, ${this.state.yPos}em) rotate3d(${this.state.xRot}, ${this.state.yRot}, ${this.state.zRot}, ${this.state.rot}deg)`,
+        }}
+      >
+        <div className="gradient"></div>
+      </div>
     );
+  }
 }
+
+export default CardHero;
