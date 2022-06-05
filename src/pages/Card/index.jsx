@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./style.scss";
 
 function CardPage() {
+  const { name } = useParams()
+  console.log(name);
   return (
     <>
       <main>
