@@ -14,8 +14,7 @@ class Sphere extends React.Component {
 
   componentDidMount() {
     sphereAnimation(this.props.data.sphereAnimation);
-    const win = document.querySelector("#Hero");
-    win.addEventListener("mousemove", (e) => {
+    document.addEventListener("mousemove", (e) => {
       let ratioX = e.clientX / window.innerWidth;
       let ratioY = e.clientY / window.innerWidth;
       let ratio = ratioX + ratioY;

@@ -15,8 +15,7 @@ class CardHero extends React.Component {
   }
 
   componentDidMount() {
-    const win = document.querySelector("#Hero");
-    win.addEventListener("mousemove", (e) => {
+    document.addEventListener("mousemove", (e) => {
       let xPosition;
       let yPosition;
       let xRotation;

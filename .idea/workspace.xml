@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62df334b-ae73-4584-a0fa-b752cee4e9ce" name="Changes" comment="fix">
-      <change afterPath="$PROJECT_DIR$/src/Assets/Cards/Desperate/Recto_Desperate.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/Cards/Desperate/Verso_Desperate.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/Cards/Octopus/Card Octopus_Table.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/Cards/Octopus/Card Octopus_background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/Cards/Octopus/Card Octopus_cup.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assets/Cards/Octopus/Verso_Octopus.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/Cards_intro/Recto_Desperate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/Cards_intro/Verso_Desperate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/Cards_intro/Verso_Octopus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card_hero/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card_hero/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card_hero/CardHero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card_hero/CardHero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Spheres/sphere.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Spheres/sphere.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
