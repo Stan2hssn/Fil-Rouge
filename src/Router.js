@@ -1,17 +1,13 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/Home";
-import CardsPage from "./pages/Cards";
+import { BrowserRouter as Router } from "react-router-dom";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 
-function Router() {
+function Rou() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="cards" element={<CardsPage />} />
-      </Routes>
-    </BrowserRouter>
+    <Router>
+      <AnimatedRoutes />
+    </Router>
   );
 }
 
-export default Router;
+export default Rou;
