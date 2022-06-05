@@ -29,14 +29,16 @@ export default function Home() {
       setVisible(false);
     }
 
-    if (section2offsetYTop <= -section) {
+    if (section2offsetYTop <= -section && section2offsetYTop >= -section * 2) {
       setOne(true);
+      console.log('hello 1')
     } else {
       setOne(false);
     }
 
-    if (section2offsetYTop <= -section * 2) {
+    if (section2offsetYTop <= -section * 2 && section2offsetYTop >= -section * 3) {
       setTwo(true);
+      console.log('hello 2')
     } else {
       setTwo(false);
     }

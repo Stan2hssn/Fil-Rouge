@@ -38,16 +38,28 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
+
         .progress-bar {
           width: 100%;
           overflow: hidden;
+          background-color: $tertiary;
 
           .inner-progress {
             background-color: $secondary;
-            width: 0%;
-            height: 0.2em;
-            transition: transform 0.4s ease-out !important;
+            width: 0;
+            height: 0.15em;
+            will-change: transform, width;
+            transition: all 0.4s ease-out;
           }
+        }
+      }
+
+      li:hover {
+        .inner-progress {
+          width: 100% !important;
+          transform-origin: left;
+          transform: translateX(0);
+          transition: all 0.4s ease-out !important;
         }
       }
     }
@@ -62,6 +74,7 @@
       -webkit-box-shadow: inset 0 0 0 0.1em rgba(250, 75, 75, 0);
       -moz-box-shadow: inset 0 0 0 0.1em rgba(250, 75, 75, 0);
       box-shadow: inset 0 0 0 0.1em rgba(250, 75, 75, 0);
+      will-change: box-shadow, background;
       transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
     }
 
@@ -70,10 +83,24 @@
       -webkit-box-shadow: inset 0 0 0 0.1em rgba(250, 75, 75, 1);
       -moz-box-shadow: inset 0 0 0 0.1em rgba(250, 75, 75, 1);
       box-shadow: inset 0 0 0 0.1em rgba(250, 75, 75, 1);
+      will-change: box-shadow, background;
       transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
     }
   }
+
+
+  .current {
+    will-change: transform;
+    transition: transform 0.4s ease-out !important;
+  }
 }
+
+.end {
+  transform: translateX(100%);
+  width: 100%;
+  transition: all 0.4s ease-out;
+}
+
 
 .visible {
   position: fixed;
@@ -81,7 +108,4 @@
   transition: opacity 0.5s ease-out;
 }
 
-.end {
-  transform: translateX(100%);
-  transition: all 0.4s ease-out !important;
-}
+

@@ -2,24 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62df334b-ae73-4584-a0fa-b752cee4e9ce" name="Changes" comment="fix">
-      <change afterPath="$PROJECT_DIR$/public/First_section_About.glb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Three/First_section_About.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Three/First_section_About.gltf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Three/First_section_About.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Three/Second_section_About.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Three/Second_section_About.gltf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Three/velvet_caracole.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/Three/First_section_About.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/Three/First_section_About.gltf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/Three/First_section_About.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/Three/Second_section_About.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/Three/Second_section_About.gltf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/Three/velvet_caracole.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Section_One/sectionOne.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_One/sectionOne.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Section_Two/sectionTwo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_Two/sectionTwo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Three/canvasFirst.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Three/canvasFirst.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Three/canvasSecond.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Three/canvasSecond.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Sections.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Sections.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Header/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Header/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

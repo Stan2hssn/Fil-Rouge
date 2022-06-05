@@ -4,62 +4,68 @@ import "./style.scss";
 
 export default function Header({visible, one, two, three, top}) {
 
-        const [progress, setProgress] = useState(0);
-        const [progress2, setProgress2] = useState(0);
-        const [progress3, setProgress3] = useState(0);
+    const [progress, setProgress] = useState(0);
+    const [progress2, setProgress2] = useState(0);
+    const [progress3, setProgress3] = useState(0);
 
-        let className = "sectionHeader";
-        let innerProgress = "inner-progress";
-        let innerProgress2 = "inner-progress";
-        let innerProgress3 = "inner-progress";
-        let distance = {top};
-        let value;
+    let className = "sectionHeader";
+    let innerProgress = "inner-progress";
+    let innerProgress2 = "inner-progress";
+    let innerProgress3 = "inner-progress";
+    let distance = {top};
+    let value;
+
+    if (visible) {
+        className += " visible";
+    } else {
+        className = "sectionHeader"
+    }
+
+    if (one) {
+        innerProgress = "inner-progress end";
+        innerProgress2 = "inner-progress current";
+    } else {
+        innerProgress = "inner-progress current";
+        innerProgress2 = "inner-progress";
+    }
+
+    if (two) {
+        innerProgress = "inner-progress end";
+        innerProgress2 = "inner-progress end";
+        innerProgress3 = "inner-progress current"
+    } else {
+        innerProgress3 = "inner-progress"
+    }
+
+    useEffect(() => {
+        const scroller = document.querySelector('.rules');
+        scroller.addEventListener("scroll", progressSection, {passive: true});
+    })
+
+    function progressSection() {
+
 
         if (visible) {
-            className += " visible";
+            value = (-distance.top * 100) / (window.innerHeight);
+            setProgress(value > 100 ? 100 : value);
+        }
+
+        if (one || two) {
+            value = ((-distance.top - window.innerHeight) * 100) / (window.innerHeight)
+            setProgress2(value > 100 ? 100 : value)
         } else {
-            className = "sectionHeader"
+
+            setProgress2(0)
         }
 
-        if (one) {
-            innerProgress = "inner-progress end"
+        if (two) {
+            value = ((-distance.top - (window.innerHeight * 2)) * 100) / (window.innerHeight)
+            setProgress3(value > 100 ? 100 : value)
         } else {
-            innerProgress = "inner-progress"
+            setProgress3(0)
         }
 
-        two ? (innerProgress2 = "inner-progress end") : (innerProgress2 = "inner-progress")
-
-        three ? (innerProgress3 = "inner-progress end") : (innerProgress3 = "inner-progress")
-
-        useEffect(() => {
-            const scroller = document.querySelector('.rules');
-            scroller.addEventListener("scroll", progressSection, {passive : true});
-        })
-
-        function progressSection() {
-
-
-            if (visible) {
-                value = (-distance.top * 100) / (window.innerHeight);
-                setProgress(value > 100 ? 100 : value);
-            }
-
-            if (one) {
-                value = ((-distance.top - window.innerHeight) * 100) / (window.innerHeight)
-                setProgress2(value > 100 ? 100 : value)
-            } else {
-
-                setProgress2(0)
-            }
-
-            if (two) {
-                value = ((-distance.top - (window.innerHeight * 2)) * 100) / (window.innerHeight)
-                setProgress3(value > 100 ? 100 : value)
-            } else {
-                setProgress3(0)
-            }
-
-        }
+    }
 
 
     return (<>
