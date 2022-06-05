@@ -1,13 +1,17 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-import AnimatedRoutes from "./components/AnimatedRoutes";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/Home";
+import CardsPage from "./pages/Cards";
 
-function Rou() {
+function Routing() {
   return (
     <Router>
-      <AnimatedRoutes />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="cards" element={<CardsPage />} />
+      </Routes>
     </Router>
   );
 }
 
-export default Rou;
+export default Routing;
