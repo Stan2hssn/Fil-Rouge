@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/Home";
-import CardsPage from "./pages/Cards";
+import CardsPage from "./pages/SectionCards";
 
 function Routing() {
   return (
