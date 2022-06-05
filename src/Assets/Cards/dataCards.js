@@ -1,56 +1,55 @@
 const DataCard = {
+  octopus: {
+    Name: "Octopus",
+    Recto: [
+      require("./Octopus/Octopus_0.png"),
+      require("./Octopus/Octopus_1.png"),
+      require("./Octopus/Octopus_2.png"),
+    ],
+    Verso: require("./Octopus/Verso.png"),
+  },
 
-    octopus: {
-        Name: "Octopus",
-        Recto: {
-            0: "../src/Assets/Cards/Octopus/Octopus_0.png",
-            1: "../src/Assets/Cards/Octopus/Octopus_1.png",
-            2: "../src/Assets/Cards/Octopus/Octopus_2.png"
-        },
-        Verso: "../src/Assets/Cards/Octopus/Verso",
-    },
+  desperata: {
+    Name: "Desperata",
+    Recto: require("./Desperata/Recto.png"),
+    Verso: require("./Desperata/Verso.png"),
+  },
 
-    desperata: {
-        Name: "Desperata",
-        Recto: "./Desperata/Recto.png",
-        Verso: "./Desperata/Verso.png"
-    },
+  cross: {
+    Name: "Cross",
+    Recto: require("./Cross/Recto.png"),
+    Verso: require("./Cross/Verso.png"),
+  },
 
-    cross: {
-        Name: "Cross",
-        Recto: "./Cross/Recto.png",
-        Verso: "./Cross/Verso.png"
-    },
+  fluid: {
+    Name: "Fluid",
+    Recto: require("./Fluid/Recto.png"),
+    Verso: require("./Fluid/Verso.png"),
+  },
 
-    fluid: {
-        Name: "Fluid",
-        Recto: "./Fluid/Recto.png",
-        Verso: "./Fluid/Verso.png"
-    },
+  justice: {
+    Name: "Justice",
+    Recto: require("./Justice/Recto.png"),
+    Verso: require("./Justice/Verso.png"),
+  },
 
-    justice: {
-        Name: "Justice",
-        Recto: "./Justice/Recto.png",
-        Verso: "./Justice/Verso.png"
-    },
+  monster: {
+    Name: "Monster",
+    Recto: require("./Monster/Recto.png"),
+    Verso: require("./Monster/Verso.png"),
+  },
 
-    monster: {
-        Name: "Monster",
-        Recto: "./Monster/Recto.png",
-        Verso: "./Monster/Verso.png"
-    },
+  ping: {
+    Name: "Ping",
+    Recto: require("./Ping/Recto.png"),
+    Verso: require("./Ping/Verso.png"),
+  },
 
-    ping: {
-        Name: "Ping",
-        Recto: "./Ping/Recto.png",
-        Verso: "./Ping/Verso.png"
-    },
-
-    tunnel: {
-        Name: "Tunnel",
-        Recto: "./Tunnel/Recto.png",
-        Verso: "./Tunnel/Verso.png"
-    }
-}
+  tunnel: {
+    Name: "Tunnel",
+    Recto: require("./Tunnel/Recto.png"),
+    Verso: require("./Tunnel/Verso.png"),
+  },
+};
 
 export default DataCard;
