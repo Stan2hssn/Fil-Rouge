@@ -13,8 +13,9 @@ export default function Home() {
   const [top, setTop] = useState(0);
 
   useEffect(() => {
-    const scroller = document.querySelector(".rules");
-    scroller.addEventListener("scroll", handleScroll, { passive: true });
+    // const scroller = document.querySelector(".rules");
+    // scroller.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll()
   }, []);
 
   function handleScroll() {
@@ -23,31 +24,10 @@ export default function Home() {
 
     setTop(section2offsetYTop);
 
-    if (section2offsetYTop <= 0) {
-      setVisible(true);
-    } else {
-      setVisible(false);
-    }
-
-    if (section2offsetYTop <= -section && section2offsetYTop >= -section * 2) {
-      setOne(true);
-      console.log('hello 1')
-    } else {
-      setOne(false);
-    }
-
-    if (section2offsetYTop <= -section * 2 && section2offsetYTop >= -section * 3) {
-      setTwo(true);
-      console.log('hello 2')
-    } else {
-      setTwo(false);
-    }
-
-    if (section2offsetYTop <= -section * 3) {
-      setThree(true);
-    } else {
-      setThree(false);
-    }
+    setVisible(section2offsetYTop <= 0);
+    setOne(section2offsetYTop <= -section && section2offsetYTop >= -section * 2);
+    setTwo(section2offsetYTop <= -section * 2 && section2offsetYTop >= -section * 3);
+    setThree(section2offsetYTop <= -section * 3);
   }
 
   return (

@@ -64,15 +64,10 @@ function Model({ ...props }) {
 
 useGLTF.preload(GLTF);
 
-export default function CanvasFirst({ one, two }) {
-  let none = "";
-
-  if (two) {
-    return null;
-  }
+export default function CanvasFirst() {
   return (
-    <Canvas id={"first"} className={none} antialias="false">
-      <Suspense className={none} fallback={null}>
+    <Canvas id={"first"} antialias="false">
+      <Suspense fallback={null}>
         <ambientLight color="lightblue" intensity={0.4} />
         <pointLight color="lightblue" intensity={1.6} position={[0, 30, 0]} />
         <pointLight

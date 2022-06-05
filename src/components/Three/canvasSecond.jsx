@@ -89,7 +89,6 @@ function Model({ ...props }) {
 useGLTF.preload(GLTF);
 
 const CanvasSecond = () => {
-  /*    console.log(Model)*/
   return (
     <Canvas id={"second"} antialias="false">
       <Suspense fallback={null}>
