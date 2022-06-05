@@ -3,11 +3,11 @@ import { React, Suspense, useEffect, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import { PerspectiveCamera, useAnimations, useGLTF } from "@react-three/drei";
 
+const GLTF = require("./First_section_About.glb");
+
 function Model({ ...props }) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF(
-    "./Three/First_section_About.gltf"
-  );
+  const { nodes, materials, animations } = useGLTF(GLTF);
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {
@@ -62,7 +62,7 @@ function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("./public/Three/First_section_About.gltf");
+useGLTF.preload(GLTF);
 
 export default function CanvasFirst({ one, two }) {
   let none = "";

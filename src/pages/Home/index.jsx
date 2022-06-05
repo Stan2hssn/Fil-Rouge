@@ -1,6 +1,6 @@
 import React from "react";
 import Data from "./data";
-import DataCard from "../../Assets/Cards/dataCards";
+// import DataCard from "../../Assets/Cards/dataCards";
 import HeaderHero from "../../components/Home/HeaderHero/index";
 import Sphere from "../../components/Spheres/sphere";
 import Sections from "./Sections";
@@ -14,7 +14,6 @@ export default function Home() {
 
   }
 
-  console.log(DataCard.octopus.Recto[1]);
   return (
     <>
       <div className="rules">

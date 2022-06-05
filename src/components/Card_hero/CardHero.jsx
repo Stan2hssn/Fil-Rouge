@@ -1,5 +1,5 @@
 import React from "react";
-import DataCard from "../../Assets/Cards/dataCards"
+// import DataCard from "../../Assets/Cards/dataCards"
 import "./style.scss";
 
 class CardHero extends React.Component {
