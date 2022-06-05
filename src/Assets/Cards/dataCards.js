@@ -17,37 +17,37 @@ const DataCard = {
 
   cross: {
     Name: "Cross",
-    Recto: require("./Cross/Recto.png"),
+    Recto: require("./_Default/Recto.png"),
     Verso: require("./Cross/Verso.png"),
   },
 
   fluid: {
     Name: "Fluid",
-    Recto: require("./Fluid/Recto.png"),
+    Recto: require("./_Default/Recto.png"),
     Verso: require("./Fluid/Verso.png"),
   },
 
   justice: {
     Name: "Justice",
-    Recto: require("./Justice/Recto.png"),
+    Recto: require("./_Default/Recto.png"),
     Verso: require("./Justice/Verso.png"),
   },
 
   monster: {
     Name: "Monster",
-    Recto: require("./Monster/Recto.png"),
+    Recto: require("./_Default/Recto.png"),
     Verso: require("./Monster/Verso.png"),
   },
 
   ping: {
     Name: "Ping",
-    Recto: require("./Ping/Recto.png"),
+    Recto: require("./_Default/Recto.png"),
     Verso: require("./Ping/Verso.png"),
   },
 
   tunnel: {
     Name: "Tunnel",
-    Recto: require("./Tunnel/Recto.png"),
+    Recto: require("./_Default/Recto.png"),
     Verso: require("./Tunnel/Verso.png"),
   },
 };
