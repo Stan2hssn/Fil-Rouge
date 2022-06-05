@@ -9,7 +9,7 @@ class CardHero extends React.Component {
       yPos: props.data.yPos,
       xRot: props.data.xRot,
       yRot: props.data.yRot,
-      zRot: props.data.zRot,
+      zRot: props.data.zRot || 0,
       rot: props.data.rot,
     };
   }
@@ -42,8 +42,6 @@ class CardHero extends React.Component {
       this.setState({xRotate: xRotation || this.props.data.xRot})
       this.setState({yRotate: yRotation || this.props.data.yRot})
       this.setState({Rot: rotation || this.props.data.rot})
-
-      if (this.props.data.zRot) this.setState(this.props.data.zRot);
     });
   }
 
