@@ -16,10 +16,9 @@ export default function Home() {
   return (
     <motion.div
       className="rules"
-      initial={{ y: 0, x: window.innerWidth, transition: { duration: 0.5 } }}
-      animate={{ y: 0, x: 0, transition: { duration: 0.5 } }}
+      initial={{ x: window.innerWidth, transition: { duration: 0.5 } }}
+      animate={{ x: 0, transition: { duration: 0.5 } }}
       exit={{
-        y: 0,
         x: -window.innerWidth,
         transition: { duration: 0.5 },
       }}
