@@ -9,8 +9,7 @@ export default function Home() {
   const [yPos, setYpos] = useState(0);
 
   useEffect(() => {
-    const Hero = document.querySelector("#Hero");
-    Hero.addEventListener("mousemove", parallax);
+    document.addEventListener("mousemove", parallax);
   }, []);
 
   function parallax(e) {
