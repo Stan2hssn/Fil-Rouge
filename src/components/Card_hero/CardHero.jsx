@@ -1,4 +1,5 @@
 import React from "react";
+import DataCard from "../../Assets/Cards/dataCards"
 import "./style.scss";
 
 class CardHero extends React.Component {
@@ -50,6 +51,7 @@ class CardHero extends React.Component {
         className={`card-container ${this.props.name}`}
         style={{
           transform: `translate(${this.state.xPos}em, ${this.state.yPos}em) rotate3d(${this.state.xRot}, ${this.state.yRot}, ${this.state.zRot}, ${this.state.rot}deg)`,
+
         }}
       >
         <div className="gradient"></div>

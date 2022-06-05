@@ -1,3 +1,5 @@
+import DataCard from "../../Assets/Cards/dataCards";
+
 const Data = {
   sphere: {
     first: {

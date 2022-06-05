@@ -1,5 +1,6 @@
 import React from "react";
 import Data from "./data";
+import DataCard from "../../Assets/Cards/dataCards";
 import HeaderHero from "../../components/Home/HeaderHero/index";
 import Sphere from "../../components/Spheres/sphere";
 import Sections from "./Sections";
@@ -10,9 +11,10 @@ import "./style.scss";
 export default function Home() {
 
   function scrollAbout() {
-    console.log("hello");
+
   }
 
+  console.log(DataCard.octopus.Recto[1]);
   return (
     <>
       <div className="rules">
