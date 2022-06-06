@@ -1,5 +1,6 @@
 // import { Link } from "react-router-dom";
 import React, { useEffect, useState, useRef } from "react";
+import Tilty from "react-tilty";
 import Data from "../../Assets/Cards/dataCards";
 import "./style.scss";
 
@@ -40,7 +41,10 @@ function CardsPage() {
     }
 
     // eslint-disable-next-line
-    if (d < 0 && container.current.scrollLeft == container.current.offsetWidth) {
+    if (
+      d < 0 &&
+      container.current.scrollLeft == container.current.offsetWidth
+    ) {
       setClassName("ltr");
       container.current.scrollTo({
         top: 0,
@@ -64,14 +68,16 @@ function CardsPage() {
             <div className="row" index={divIndex} key={`row${divIndex}`}>
               {item.map(({ Name, Verso }, index) => (
                 <div className="card" key={Name}>
-                  <img
-                    src={Verso}
-                    alt={Name}
-                    width="218"
-                    height="385"
-                    index={index % 4}
-                    serie={Math.floor(index / 4)}
-                  />
+                  <Tilty reverse axis="xy" perspective={1000} reset={false}>
+                    <img
+                      src={Verso}
+                      alt={Name}
+                      width="218"
+                      height="385"
+                      index={index % 4}
+                      serie={Math.floor(index / 4)}
+                    />
+                  </Tilty>
                   <h3>{Name}</h3>
                 </div>
               ))}
