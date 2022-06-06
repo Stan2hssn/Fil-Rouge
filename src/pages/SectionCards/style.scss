@@ -2,3 +2,105 @@
 @use "../../styles/_general";
 @use "../../styles/_spacing";
 @use "../../styles/_typo";
+
+.cards {
+    position: relative;
+
+    .cardsContainer {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        overflow: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        margin: 0 auto;
+
+        .row {
+            display: flex;
+            scroll-snap-align: center;
+            max-width: 1168px;
+            margin: 0 calc((100% - 1168px) / 2);
+
+            .card {
+                margin: 4px 37px;
+
+                img {
+                    border-radius: 20px;
+                    will-change: transform;
+                    transition: transform 0.7s ease-in-out;
+                }
+
+                h3 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .ltr {
+        .row:first-child {
+
+            img[index="3"] {
+                transform: rotate(25deg);
+            }
+
+            img[index="2"] {
+                transform: rotate(20deg);
+            }
+
+            img[index="1"] {
+                transform: rotate(15deg);
+            }
+
+            img[index="0"] {
+                transform: rotate(10deg);
+            }
+        }
+    }
+
+    .rtl {
+        .row:last-child {
+            img[index="0"] {
+                transform: rotate(-25deg);
+            }
+
+            img[index="1"] {
+                transform: rotate(-20deg);
+            }
+
+            img[index="2"] {
+                transform: rotate(-15deg);
+            }
+
+            img[index="3"] {
+                transform: rotate(-10deg);
+            }
+        }
+    }
+
+    nav {
+        display: flex;
+        user-select: none;
+        justify-content: center;
+        width: 100%;
+
+        .prev {
+            transform-origin: right center;
+            transition: transform 0.5s ease-in-out;
+            will-change: transform;
+            cursor: pointer;
+        }
+
+        .next {
+            transform-origin: left center;
+            transition: transform 0.5s ease-in-out;
+            will-change: transform;
+            cursor: pointer;
+        }
+
+        .prev:hover,
+        .next:hover {
+            transform: scaleX(1.25);
+        }
+    }
+}

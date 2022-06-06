@@ -19,11 +19,8 @@ export default function Home() {
     let y = (e.clientY - (rect.height / 2 + rect.top)) / 100;
 
     x = x > 1 ? 1 : x;
-
     y = y > 1 ? 1 : y;
-
     x = x < -1 ? -1 : x;
-
     y = y < -1 ? -1 : y;
 
     setXpos(x);
