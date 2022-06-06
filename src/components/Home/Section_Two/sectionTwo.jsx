@@ -9,15 +9,19 @@ export default function SectionTwo({one, two, visible}) {
     let body2 = 'body2 fade-body-before';
 
     if (visible) {
-        sectionTwo = 'SectionTwo fade_SectionTwo';
-    } else {
-        sectionTwo = 'SectionTwo fade_SectionTwo none2'
+        sectionTwo = 'SectionTwo fade-SectionTwo';
     }
 
     if (one) {
         sectionTwo = 'SectionTwo';
         title2 = 'title2';
         body2 = 'body2';
+    }
+
+    if (two) {
+        sectionTwo = 'SectionTwo fade-SectionTwo';
+        title2 = "title2 fade-title-after";
+        body2 = "body2 fade-body-after";
     }
 
     return (

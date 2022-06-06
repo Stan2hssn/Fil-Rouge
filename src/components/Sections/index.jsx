@@ -16,7 +16,7 @@ export default function Sections({ visible, one, two, three, top }) {
       <Header visible={visible} one={one} two={two} three={three} top={top} />
       <SectionOne one={one} two={two} />
       <SectionTwo one={one} two={two} visible={visible} />
-      <SectionThree three={three} />
+      <SectionThree two={two} />
       <div className="sections-wireframe">
         <div className="wireframe" /*ref={wire1}*/>1</div>
         <div className="wireframe" /*ref={wire2}*/>2</div>

@@ -76,7 +76,6 @@ export default function CanvasFirst() {
           position={[10, -10, 10]}
         />
         <Model antialiased="true" />
-        <gridHelper />
       </Suspense>
     </Canvas>
   );

@@ -1,28 +1,22 @@
 import React from "react";
-import CanvasSecond from "../../Three/canvasSecond";
+import CanvasThird from "../../Three/canvasThird";
 import "./style.scss";
 
-export default function SectionTwo({two, visible}) {
+export default function SectionThree({two, visible}) {
 
   let sectionThree = "SectionThree fade_SectionThree none3";
   let title3 = 'title3 fade-title-before';
   let body3 = 'body3 fade-body-before';
 
-  if (visible) {
-    sectionThree = 'SectionThree fade_SectionThree';
-  } else {
-    sectionThree = 'SectionThree fade_SectionThree none3'
-  }
-
   if (two) {
-    sectionThree = 'sectionHeader';
+    sectionThree = 'SectionThree';
     title3= 'title3';
     body3 = 'body3';
   }
 
   return (
       <div className={sectionThree}>
-        <CanvasSecond/>
+        {/*<CanvasThird/>*/}
         <div className="section_text">
           <h1 className={title3}>Liquid</h1>
           <p className={body3}>

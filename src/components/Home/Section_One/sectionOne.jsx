@@ -7,7 +7,7 @@ export default function SectionOne({ one, two }) {
   let title = "title";
   let body = "body";
 
-  if (one) {
+  if (one || two) {
     sectionOne += " fade-sectionOne";
     title += " fade-title-after";
     body += " fade-body-after";
