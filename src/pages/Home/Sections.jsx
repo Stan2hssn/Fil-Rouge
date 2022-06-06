@@ -13,9 +13,8 @@ export default function Home() {
   const [top, setTop] = useState(0);
 
   useEffect(() => {
-    // const scroller = document.querySelector(".rules");
-    // scroller.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll()
+    const scroller = document.querySelector(".rules");
+    scroller.addEventListener("scroll", handleScroll, { passive: true });
   }, []);
 
   function handleScroll() {
