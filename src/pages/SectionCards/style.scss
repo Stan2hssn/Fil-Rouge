@@ -39,29 +39,56 @@ html {
 
 
       .card {
-          margin: 0.25em 2.3em;
-          height: 100% !important;
-
-          .card-img {
-            will-change: transform;
-            width: 218px;
-            height: 385px;
-            overflow: hidden;
-            border-radius: 20px;
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
+        display: flex;
+        flex-direction: column;
+        margin: 0.25em 2.3em;
+        gap: 2em;
+        height: 100% !important;
+        cursor: pointer;
 
 
-          h3 {
-            text-align: center;
-          }
-                h3 {
-                    text-align: center;
-                    will-change: opacity;
-                    transition: opacity 1.2s ease-in-out;
-                }
-            }
+        .card-img {
+          will-change: transform;
+          width: 218px;
+          height: 385px;
+          overflow: hidden;
+          border-radius: 20px;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .t::before {
+          content: "";
+          background: radial-gradient(
+                          115.13% 62.8% at -18.86% 2.7%,
+                          rgba(250, 238, 238, 0.2) 0%,
+                          rgba(0, 0, 0, 0) 50%
+          );
+          width: 218px;
+          height: 385px;
+          top: 0;
+          left: 0;
+          z-index: 1;
+        }
+
+        .tilty-glare {
+          background: radial-gradient(140.84% 140.85% at 50.92% 139.66%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%) !important;
+        }
+
+         /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+
+
+        .card-name {
+          text-align: center;
+        }
+
+        div {
+          text-align: center;
+          will-change: opacity;
+          transition: opacity 1.2s ease-in-out;
+        }
+      }
         }
       }
     }
@@ -156,7 +183,7 @@ html {
     justify-content: center;
     width: 100%;
     font-size: 1.5em;
-    padding-bottom: 3.5em;
+    padding-bottom: 2em;
 
     .prev {
       transform-origin: right center;

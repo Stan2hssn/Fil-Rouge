@@ -1,6 +1,5 @@
 // import { Link } from "react-router-dom";
-import React, {useRef, useState, useEffect} from "react";
-import {Link} from "react-router-dom";
+import React, {useEffect, useRef, useState} from "react";
 import Tilty from "react-tilty";
 import HeaderHero from "../../components/Home/HeaderHero/index";
 import Data from "../../Assets/Cards/dataCards";
@@ -70,22 +69,10 @@ function CardsPage() {
                       <div className="row" index={divIndex} key={`row${divIndex}`}>
                           {item.map(({Name, Verso}, index) => (
                               <div className="card" key={Name}>
-                                  <Tilty className="card-img" key={Name} reverse axes="xy" glare
+                                  <Tilty className="card-img" key={Name} reverse axes="xy" scale="1.03" glare
+                                         perspective="1000" transition
 
-                                         settings={{
-                                             max: 35,
-                                             scale: 1.2,
-                                             perspective: 2000,
-                                             transition: true,
-                                             speed: 600,
-                                             easing: "cubic-bezier(.47,.4,.49,.98)",
-                                             reset: true,
-                                             glare: true,
-                                             "max-glare": 0.1,      // the maximum "glare" opacity (1 = 100%, 0.5 = 50%)
-                                             "glare-prerender": true,
-                                         }}
-
-                                         style={{
+                                  style={{
                                              backgroundImage: `url(${Verso})`,
                                          }}
                                          alt={Name}
@@ -93,7 +80,7 @@ function CardsPage() {
                                          serie={Math.floor(index / 4)}
                                   >
                                   </Tilty>
-                                  <h3>{Name}</h3>
+                                  <div className="card-name">{Name}</div>
                               </div>
                           ))}
                       </div>
