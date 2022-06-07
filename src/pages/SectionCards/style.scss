@@ -3,104 +3,134 @@
 @use "../../styles/_spacing";
 @use "../../styles/_typo";
 
-.cards {
+
+.SectionCards {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  justify-content: space-between;
+  height: 100vh;
+
+  .position {
+    position:sticky;
+    left: 0;
+    top: 0;
+  }
+
+
+  .cards {
+    display: flex;
     position: relative;
+    flex-flow: row nowrap;
+    width: 200vw;
 
-    .cardsContainer {
+
+    .row {
         display: flex;
-        flex-flow: row nowrap;
-        width: 100%;
-        overflow: hidden;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+      scroll-snap-align: center;
 
-        .row {
-            display: flex;
-            scroll-snap-align: center;
-            max-width: 1168px;
-            margin: 0 calc((100% - 1168px) / 2);
 
-            .card {
-                margin: 4px 37px;
+      .card {
+          margin: 0.25em 2.3em;
+          height: 100% !important;
 
-                img {
-                    border-radius: 20px;
-                    will-change: transform;
-                    transition: transform 0.7s ease-in-out;
-                }
+          .card-img {
+            will-change: transform;
+            width: 218px;
+            height: 385px;
+            overflow: hidden;
+            border-radius: 20px;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
 
-                h3 {
-                    text-align: center;
-                }
-            }
+
+          h3 {
+            text-align: center;
+          }
         }
+      }
     }
 
     .ltr {
-        .row:first-child {
+      .row:first-child {
 
-            img[index="3"] {
-                transform: rotate(25deg);
-            }
-
-            img[index="2"] {
-                transform: rotate(20deg);
-            }
-
-            img[index="1"] {
-                transform: rotate(15deg);
-            }
-
-            img[index="0"] {
-                transform: rotate(10deg);
-            }
+        img[index="3"] {
+          transform: rotate(30deg);
         }
+
+        img[index="2"] {
+          transform: rotate(20deg);
+        }
+
+        img[index="1"] {
+          transform: rotate(15deg);
+        }
+
+        img[index="0"] {
+          transform: rotate(10deg);
+        }
+      }
     }
 
     .rtl {
-        .row:last-child {
-            img[index="0"] {
-                transform: rotate(-25deg);
-            }
-
-            img[index="1"] {
-                transform: rotate(-20deg);
-            }
-
-            img[index="2"] {
-                transform: rotate(-15deg);
-            }
-
-            img[index="3"] {
-                transform: rotate(-10deg);
-            }
+      .row:last-child {
+        img[index="0"] {
+          transform: rotate(-25deg);
         }
+
+        img[index="1"] {
+          transform: rotate(-20deg);
+        }
+
+        img[index="2"] {
+          transform: rotate(-15deg);
+        }
+
+        img[index="3"] {
+          transform: rotate(-10deg);
+        }
+      }
     }
 
-    nav {
-        display: flex;
-        user-select: none;
-        justify-content: center;
-        width: 100%;
+  }
 
-        .prev {
-            transform-origin: right center;
-            transition: transform 0.5s ease-in-out;
-            will-change: transform;
-            cursor: pointer;
-        }
+  nav {
+    display: flex;
+    position: sticky;
+    left: 0;
+    user-select: none;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 2em;
+    font-size: 1.5em;
 
-        .next {
-            transform-origin: left center;
-            transition: transform 0.5s ease-in-out;
-            will-change: transform;
-            cursor: pointer;
-        }
-
-        .prev:hover,
-        .next:hover {
-            transform: scaleX(1.25);
-        }
+    .prev {
+      transform-origin: right center;
+      transition: transform 0.5s ease-in-out;
+      will-change: transform;
+      cursor: pointer;
     }
-}
+
+    .next {
+      transform-origin: left center;
+      transition: transform 0.3s ease-out;
+      will-change: transform;
+      cursor: pointer;
+    }
+
+    .prev:hover,
+    .next:hover {
+      transform: scaleX(1.25);
+    }
+  }
+
+
+  .SectionCards::-webkit-scrollbar,
+  .SectionCards::-webkit-scrollbar {
+    display: none;
+  }

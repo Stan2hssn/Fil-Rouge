@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62df334b-ae73-4584-a0fa-b752cee4e9ce" name="Changes" comment="fix">
-      <change afterPath="$PROJECT_DIR$/src/components/Three/Third_section.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Section_One/sectionOne.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_One/sectionOne.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Section_Three/sectionThree.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_Three/sectionThree.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Section_Two/sectionTwo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_Two/sectionTwo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Section_Two/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Section_Two/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sections/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sections/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Three/canvasFirst.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Three/canvasFirst.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SectionCards/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SectionCards/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SectionCards/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SectionCards/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_typo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_typo.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Header/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Header/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,6 +112,7 @@
       <workItem from="1654472428670" duration="617000" />
       <workItem from="1654474281333" duration="923000" />
       <workItem from="1654475245721" duration="1335000" />
+      <workItem from="1654546997429" duration="11953000" />
     </task>
     <servers />
   </component>
