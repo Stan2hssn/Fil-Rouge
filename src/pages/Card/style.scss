@@ -2,3 +2,84 @@
 @use "../../styles/_general";
 @use "../../styles/_spacing";
 @use "../../styles/_typo";
+
+.uniqueCard {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+
+    .content {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+
+        .card {
+            width: fit-content;
+            height: fit-content;
+            position: fixed;
+            will-change: left;
+            transition: left 0.2s ease-in-out;
+            transform: translateX(-50%);
+
+            * {
+                transform-style: preserve-3d;
+            }
+
+            .images {
+                will-change: transform;
+                transition: transform 1s ease-in-out;
+                border-radius: 15px;
+
+                img {
+                    border-radius: 15px;
+                    backface-visibility: hidden;
+                }
+
+                .recto {
+                    backface-visibility: hidden;
+                    position: absolute;
+                    top: 0;
+                    border-radius: 15px;
+                    transform: rotateY(180deg) translateZ(1px);
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+
+            .images:hover {
+                transform: rotateY(180deg);
+            }
+            
+            .block{
+                transform: rotateY(180deg) !important;
+            }
+        }
+
+        .text {
+            margin-top: 200vh;
+            margin-left: 50%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 42px 0 0;
+            will-change: opacity;
+            transition: opacity 0.75s ease-out;
+
+            p {
+                white-space: pre-line;
+            }
+        }
+    }
+}
