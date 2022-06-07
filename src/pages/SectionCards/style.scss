@@ -3,6 +3,9 @@
 @use "../../styles/_spacing";
 @use "../../styles/_typo";
 
+$transition-card: all 0.5s ease-out;
+
+
 html {
   overflow: hidden;
 }
@@ -57,20 +60,6 @@ html {
           background-size: cover;
         }
 
-        .t::before {
-          content: "";
-          background: radial-gradient(
-                          115.13% 62.8% at -18.86% 2.7%,
-                          rgba(250, 238, 238, 0.2) 0%,
-                          rgba(0, 0, 0, 0) 50%
-          );
-          width: 218px;
-          height: 385px;
-          top: 0;
-          left: 0;
-          z-index: 1;
-        }
-
         .tilty-glare {
           background: radial-gradient(140.84% 140.85% at 50.92% 139.66%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%) !important;
         }
@@ -96,82 +85,97 @@ html {
     .ltr {
       .row:first-child {
 
-        img[index="3"] {
-          transform: rotate(30deg);
-            img[index="3"] {
-                transform: rotate(25deg);
-            }
-
-            img[index="2"] {
-                transform: rotate(20deg);
-            }
-
-            img[index="1"] {
-                transform: rotate(15deg);
-            }
-
-            img[index="0"] {
-                transform: rotate(10deg);
-            }
-
-            h3 {
-                opacity: 0;
-            }
+        .card[index="3"] {
+          transition: $transition-card;
+          transform: rotate(25deg);
         }
 
-        img[index="2"] {
+        .card[index="2"] {
+          transition: $transition-card;
           transform: rotate(20deg);
         }
 
-        img[index="1"] {
+        .card[index="1"] {
+          transition: $transition-card;
           transform: rotate(15deg);
         }
 
-        img[index="0"] {
+        .card[index="0"] {
+          transition: $transition-card;
           transform: rotate(10deg);
         }
       }
-    }
 
-    .rtl {
+
       .row:last-child {
-        img[index="0"] {
-          transform: rotate(-25deg);
-        .row:last-child {
-            img[index="0"] {
-                transform: rotate(-25deg);
-            }
 
-            img[index="1"] {
-                transform: rotate(-20deg);
-            }
-
-            img[index="2"] {
-                transform: rotate(-15deg);
-            }
-
-            img[index="3"] {
-                transform: rotate(-10deg);
-            }
-
-            h3 {
-                opacity: 0;
-            }
+        .card[index="3"] {
+          transition: $transition-card;
+          transform: rotate(25deg);
         }
 
-        img[index="1"] {
-          transform: rotate(-20deg);
+        .card[index="2"] {
+          transition: $transition-card;
+          transform: rotate(20deg);
         }
 
-        img[index="2"] {
-          transform: rotate(-15deg);
+        .card[index="1"] {
+          transition: $transition-card;
+          transform: rotate(15deg);
         }
 
-        img[index="3"] {
-          transform: rotate(-10deg);
+        .card[index="0"] {
+          transition: $transition-card;
+          transform: rotate(10deg);
         }
       }
+
     }
+
+.rtl {
+  .row:first-child {
+    .card[index="0"] {
+      transition: $transition-card;
+      transform: rotate(-30deg);
+    }
+
+    .card[index="1"] {
+      transition: $transition-card;
+      transform: rotate(-20deg);
+    }
+
+    .card[index="2"] {
+      transition: $transition-card;
+      transform: rotate(-15deg);
+    }
+
+    .card[index="3"] {
+      transition: $transition-card;
+      transform: rotate(-10deg);
+    }
+  }
+
+  .row:last-child {
+    .card[index="0"] {
+      transition: $transition-card;
+      transform: rotate(-30deg);
+    }
+
+    .card[index="1"] {
+      transition: $transition-card;
+      transform: rotate(-20deg);
+    }
+
+    .card[index="2"] {
+      transition: $transition-card;
+      transform: rotate(-15deg);
+    }
+
+    .card[index="3"] {
+      transition: $transition-card;
+      transform: rotate(-10deg);
+    }
+  }
 
   }
 

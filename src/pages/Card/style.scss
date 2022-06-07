@@ -3,12 +3,18 @@
 @use "../../styles/_spacing";
 @use "../../styles/_typo";
 
+.position {
+    position: sticky;
+}
+
 .uniqueCard {
     width: 100%;
     height: 100vh;
     position: relative;
     display: flex;
     overflow: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 
     .content {
         width: 100%;
@@ -82,4 +88,8 @@
             }
         }
     }
+}
+
+.uniqueCard::-webkit-scrollbar {
+    display: none;
 }

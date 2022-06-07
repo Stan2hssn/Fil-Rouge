@@ -1,5 +1,5 @@
-// import { Link } from "react-router-dom";
 import React, {useEffect, useRef, useState} from "react";
+import { Link } from "react-router-dom";
 import Tilty from "react-tilty";
 import HeaderHero from "../../components/Home/HeaderHero/index";
 import Data from "../../Assets/Cards/dataCards";
@@ -11,6 +11,7 @@ const size = 4;
 for (let i = 0; i < Data.length; i += size) {
     divisionArray.push(Data.slice(i, i + size));
 }
+
 
 function CardsPage() {
     const [className, setClassName] = useState("pause");
@@ -68,20 +69,19 @@ function CardsPage() {
 
                       <div className="row" index={divIndex} key={`row${divIndex}`}>
                           {item.map(({Name, Verso}, index) => (
-                              <div className="card" key={Name}>
+                              <Link to={`/card/${Name}`} className="card" alt={Name}
+                                   index={index}
+                                   serie={Math.floor(index / 4)}
+                                   key={Name}>
                                   <Tilty className="card-img" key={Name} reverse axes="xy" scale="1.03" glare
                                          perspective="1000" transition
 
-                                  style={{
+                                         style={{
                                              backgroundImage: `url(${Verso})`,
-                                         }}
-                                         alt={Name}
-                                         index={index % 4}
-                                         serie={Math.floor(index / 4)}
-                                  >
+                                         }}>
                                   </Tilty>
                                   <div className="card-name">{Name}</div>
-                              </div>
+                              </Link>
                           ))}
                       </div>
 
