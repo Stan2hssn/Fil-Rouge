@@ -18,23 +18,11 @@ function CardsPage() {
     const container = useRef(null);
     const nav = useRef(null);
 
- /*   useEffect(() => {
-        window.addEventListener("wheel", function (e) {
-            if (e.deltaY > 0) {
-                container.scrollLeft += e.deltaY;
-// prevenDefault() will help avoid worrisome
-// inclusion of vertical scroll
-            } else {
-                container.scrollLeft -= e.deltaY;
-            }
-        })
-    })*/
-
 
     useEffect(() => {
 
         window.addEventListener("wheel", (e) => {
-            e.deltaY > 0 ? scrollTo(e.deltaY) : scrollTo(-e.deltaY)
+            e.deltaY > 0 ? scrollTo(e.deltaY) : scrollTo(e.deltaY)
             console.log(e.deltaY)
         })
 
