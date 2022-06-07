@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import React, { useEffect, useState, useRef } from "react";
 import Tilty from "react-tilty";
 import Data from "../../Assets/Cards/dataCards";
@@ -69,16 +69,20 @@ function CardsPage() {
               {item.map(({ Name, Verso }, index) => (
                 <div className="card" key={Name}>
                   <Tilty reverse axis="xy" perspective={1000} reset={false}>
-                    <img
-                      src={Verso}
-                      alt={Name}
-                      width="218"
-                      height="385"
-                      index={index % 4}
-                      serie={Math.floor(index / 4)}
-                    />
+                    <Link to={`/card/${Name}`}>
+                      <img
+                        src={Verso}
+                        alt={Name}
+                        width="218"
+                        height="385"
+                        index={index % 4}
+                        serie={Math.floor(index / 4)}
+                      />
+                    </Link>
                   </Tilty>
-                  <h3>{Name}</h3>
+                  <Link to={`/card/${Name}`}>
+                    <h3>{Name}</h3>
+                  </Link>
                 </div>
               ))}
             </div>

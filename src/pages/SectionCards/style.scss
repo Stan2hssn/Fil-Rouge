@@ -32,6 +32,8 @@
 
                 h3 {
                     text-align: center;
+                    will-change: opacity;
+                    transition: opacity 1.2s ease-in-out;
                 }
             }
         }
@@ -55,6 +57,10 @@
             img[index="0"] {
                 transform: rotate(10deg);
             }
+
+            h3 {
+                opacity: 0;
+            }
         }
     }
 
@@ -74,6 +80,10 @@
 
             img[index="3"] {
                 transform: rotate(-10deg);
+            }
+
+            h3 {
+                opacity: 0;
             }
         }
     }
