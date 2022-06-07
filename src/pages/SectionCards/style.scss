@@ -3,6 +3,9 @@
 @use "../../styles/_spacing";
 @use "../../styles/_typo";
 
+html {
+  overflow: hidden;
+}
 
 .SectionCards {
   display: flex;
@@ -17,6 +20,7 @@
     position:sticky;
     left: 0;
     top: 0;
+    margin-bottom: 0;
   }
 
 
@@ -48,19 +52,16 @@
             background-size: cover;
           }
 
-<<<<<<< HEAD
 
           h3 {
             text-align: center;
           }
-=======
                 h3 {
                     text-align: center;
                     will-change: opacity;
                     transition: opacity 1.2s ease-in-out;
                 }
             }
->>>>>>> 491505f050a1fead975d72526100a85333d781d7
         }
       }
     }
@@ -68,10 +69,8 @@
     .ltr {
       .row:first-child {
 
-<<<<<<< HEAD
         img[index="3"] {
           transform: rotate(30deg);
-=======
             img[index="3"] {
                 transform: rotate(25deg);
             }
@@ -91,7 +90,6 @@
             h3 {
                 opacity: 0;
             }
->>>>>>> 491505f050a1fead975d72526100a85333d781d7
         }
 
         img[index="2"] {
@@ -109,11 +107,9 @@
     }
 
     .rtl {
-<<<<<<< HEAD
       .row:last-child {
         img[index="0"] {
           transform: rotate(-25deg);
-=======
         .row:last-child {
             img[index="0"] {
                 transform: rotate(-25deg);
@@ -134,7 +130,6 @@
             h3 {
                 opacity: 0;
             }
->>>>>>> 491505f050a1fead975d72526100a85333d781d7
         }
 
         img[index="1"] {
@@ -160,8 +155,8 @@
     user-select: none;
     justify-content: center;
     width: 100%;
-    padding-bottom: 2em;
     font-size: 1.5em;
+    padding-bottom: 3.5em;
 
     .prev {
       transform-origin: right center;

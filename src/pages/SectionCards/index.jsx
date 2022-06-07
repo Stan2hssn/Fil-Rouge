@@ -1,10 +1,6 @@
-<<<<<<< HEAD
 // import { Link } from "react-router-dom";
-import React, {useEffect, useRef, useState} from "react";
-=======
-import { Link } from "react-router-dom";
-import React, { useEffect, useState, useRef } from "react";
->>>>>>> 491505f050a1fead975d72526100a85333d781d7
+import React, {useRef, useState, useEffect} from "react";
+import {Link} from "react-router-dom";
 import Tilty from "react-tilty";
 import HeaderHero from "../../components/Home/HeaderHero/index";
 import Data from "../../Assets/Cards/dataCards";
@@ -14,7 +10,7 @@ let divisionArray = [];
 
 const size = 4;
 for (let i = 0; i < Data.length; i += size) {
-  divisionArray.push(Data.slice(i, i + size));
+    divisionArray.push(Data.slice(i, i + size));
 }
 
 function CardsPage() {
@@ -35,7 +31,7 @@ function CardsPage() {
     })*/
 
 
-    /*useEffect(() => {
+    useEffect(() => {
 
         window.addEventListener("wheel", (e) => {
             e.deltaY > 0 ? scrollTo(e.deltaY) : scrollTo(-e.deltaY)
@@ -72,10 +68,9 @@ function CardsPage() {
             });
         }
 
-    }*/
+    }
 
   return (
-<<<<<<< HEAD
       <div className="SectionCards" ref={container}
       >
 
@@ -134,9 +129,7 @@ function CardsPage() {
 
       </div>
 
-=======
-    <>
-      <main className="cards">
+      /*<main className="cards">
         <div
           className={`cardsContainer ${className}`}
           ref={container}
@@ -177,9 +170,7 @@ function CardsPage() {
             ---&gt;
           </div>
         </nav>
-      </main>
-    </>
->>>>>>> 491505f050a1fead975d72526100a85333d781d7
+      </main>*/
   );
 }
 
