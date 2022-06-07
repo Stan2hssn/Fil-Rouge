@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 // import { Link } from "react-router-dom";
 import React, {useEffect, useRef, useState} from "react";
-=======
-import { Link } from "react-router-dom";
-import React, { useEffect, useState, useRef } from "react";
->>>>>>> 491505f050a1fead975d72526100a85333d781d7
 import Tilty from "react-tilty";
 import HeaderHero from "../../components/Home/HeaderHero/index";
 import Data from "../../Assets/Cards/dataCards";
@@ -75,7 +70,6 @@ function CardsPage() {
     }*/
 
   return (
-<<<<<<< HEAD
       <div className="SectionCards" ref={container}
       >
 
@@ -134,52 +128,6 @@ function CardsPage() {
 
       </div>
 
-=======
-    <>
-      <main className="cards">
-        <div
-          className={`cardsContainer ${className}`}
-          ref={container}
-          dir="ltr"
-        >
-          {divisionArray.map((item, divIndex) => (
-            <div className="row" index={divIndex} key={`row${divIndex}`}>
-              {item.map(({ Name, Verso }, index) => (
-                <div className="card" key={Name}>
-                  <Tilty reverse axis="xy" perspective={1000} reset={false}>
-                    <Link to={`/card/${Name}`}>
-                      <img
-                        src={Verso}
-                        alt={Name}
-                        width="218"
-                        height="385"
-                        index={index % 4}
-                        serie={Math.floor(index / 4)}
-                      />
-                    </Link>
-                  </Tilty>
-                  <Link to={`/card/${Name}`}>
-                    <h3>{Name}</h3>
-                  </Link>
-                </div>
-              ))}
-            </div>
-          ))}
-        </div>
-        <nav ref={nav}>
-          <div className="prev" data-value="-1">
-            {" "}
-            &lt;---{" "}
-          </div>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <div className="next" data-value="1">
-            {" "}
-            ---&gt;
-          </div>
-        </nav>
-      </main>
-    </>
->>>>>>> 491505f050a1fead975d72526100a85333d781d7
   );
 }
 
