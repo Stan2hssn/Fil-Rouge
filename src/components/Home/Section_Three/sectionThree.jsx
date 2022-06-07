@@ -1,5 +1,5 @@
 import React from "react";
-// import CanvasThird from "../../Three/canvasThird";
+import CanvasFirst from "../../Three/canvasFirst";
 import "./style.scss";
 
 export default function SectionThree({ two }) {
@@ -15,15 +15,15 @@ export default function SectionThree({ two }) {
 
   return (
     <div className={sectionThree}>
-      {/* <CanvasThird/> */}
+       <CanvasFirst/>
       <div className="section_text">
         <h1 className={title3}>Cards</h1>
         <p className={body3}>
           Plus qu’une solution, une résolution, <span>LIQUID</span> permet la
           dématérialisation de toutes vos cartes encombrantes sous la forme de
           “liquid card” interactive.
-          <br />
-          <br />
+          <br/>
+          <br/>
           Puissante et sans risque, la beauté de nos cartes reflète aussi bien
           la sécurité que le bon goût.
         </p>

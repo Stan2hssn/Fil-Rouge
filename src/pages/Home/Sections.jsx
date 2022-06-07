@@ -36,7 +36,7 @@ export default function Home() {
       <div style={{ position: "fixed", background: "red", top: 0 }}></div>
       <section className="snap-y">
         <div className="wireframe-home hero-section" ref={section1Ref}>
-          <div className="min-h-screen">1</div>
+          <div className="min-h-screen"></div>
         </div>
         <div className="wireframe-home sections" ref={section2Ref}></div>
       </section>

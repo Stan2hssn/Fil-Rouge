@@ -1,5 +1,6 @@
-import React, { useEffect, useState, useRef } from "react";
-import { Link, useParams } from "react-router-dom";
+import React, {useEffect, useRef, useState} from "react";
+import {useParams} from "react-router-dom";
+import HeaderHero from "../../components/Home/HeaderHero/index"
 import Tilty from "react-tilty";
 import Data from "../../Assets/Cards/dataCards";
 import "./style.scss";
@@ -14,7 +15,7 @@ function CardPage() {
   const [block, setBlock] = useState("");
   const { name } = useParams();
   const { Name, Verso, Recto, Text } = Data.filter(
-    (item) => item.Name == name
+    (item) => item.Name === name
   )[0];
 
   useEffect(() => {
@@ -31,21 +32,26 @@ function CardPage() {
       if (pourcent <= 80 && pourcent > 30) {
         setTranslate(75 - (50 * 50) / (pourcent + 20));
       }
-      
+
       setBlock(pourcent < 10 ? "block" : "");
       setOpacity(pourcent < 2 ? 1 : 0);
     });
   });
 
+  function turn() {
+    block === "" ? setBlock(" turn") : setBlock("")
+
+  }
+
   let RectoElement;
   if (Array.isArray(Recto)) {
     RectoElement = Recto.map((image, index) => (
-      <img
-        src={image}
-        alt={Name}
-        width={imageWidth}
-        height={imageHeight}
-        key={image}
+        <img
+            src={image}
+            alt={Name}
+            width={imageWidth}
+            height={imageHeight}
+            key={image}
         style={{ transform: `translateZ(${index * 5}px)` }}
       />
     ));
@@ -55,31 +61,33 @@ function CardPage() {
     );
   }
 
+
   return (
-    <>
-      <main className="uniqueCard" ref={uniqueCard}>
-        <div className="content">
-          <div className="card" style={{ left: `${translate}%` }}>
-            <Tilty
-              reverse
-              axis="xy"
-              perspective={5000}
-              reset={false}
-              style={{ transformStyle: "preserve-3d" }}
-            >
-              <div className={`images ${block}`}>
-                <img
-                  src={Verso}
-                  alt={Name}
-                  width={imageWidth}
-                  height={imageHeight}
-                />
-                <div
-                  className="recto"
-                  style={{ width: imageWidth, height: imageHeight }}
-                >
-                  {RectoElement}
-                </div>
+      <>
+        <div className="chaque">
+          <HeaderHero/>
+        </div>
+        <main className="uniqueCard" ref={uniqueCard}>
+          <div className="content">
+            <div className="card" onClick={turn} style={{left: `${translate}%`}}>
+              <Tilty
+                  reverse axes="xy" scale="1.03"
+                  perspective="1000" transition
+                  style={{transformStyle: "preserve-3d"}}
+              >
+                <div className={`images ${block}`}>
+                  <img
+                      src={Verso}
+                      alt={Name}
+                      width={imageWidth}
+                      height={imageHeight}
+                  />
+                  <div
+                      className="recto"
+                      style={{width: imageWidth, height: imageHeight}}
+                  >
+                    {RectoElement}
+                  </div>
               </div>
             </Tilty>
           </div>

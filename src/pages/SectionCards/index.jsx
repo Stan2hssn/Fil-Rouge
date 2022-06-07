@@ -1,5 +1,5 @@
-import React, {useEffect, useRef, useState} from "react";
-import { Link } from "react-router-dom";
+import React, {useEffect, useRef} from "react";
+import {Link} from "react-router-dom";
 import Tilty from "react-tilty";
 import HeaderHero from "../../components/Home/HeaderHero/index";
 import Data from "../../Assets/Cards/dataCards";
@@ -14,7 +14,7 @@ for (let i = 0; i < Data.length; i += size) {
 
 
 function CardsPage() {
-    const [className, setClassName] = useState("pause");
+    let className = "pause";
     const container = useRef(null);
     const nav = useRef(null);
 
@@ -37,7 +37,7 @@ function CardsPage() {
 
 
         if (d > 0 && container.current.scrollLeft === 0) {
-            setClassName("rtl");
+            /*setClassName("rtl");*/
             container.current.scrollTo({
                 top: 0,
                 left: container.current.offsetWidth,
@@ -49,7 +49,7 @@ function CardsPage() {
             d < 0 &&
             container.current.scrollLeft === container.current.offsetWidth
         ) {
-            setClassName("ltr");
+            /*setClassName("ltr");*/
             container.current.scrollTo({
                 top: 0,
                 left: 0,
@@ -62,7 +62,9 @@ function CardsPage() {
       <div className="SectionCards" ref={container}
       >
 
-          <HeaderHero/>
+          <div className="header_container">
+              <HeaderHero/>
+          </div>
 
           <main className={`cards ${className}`} dir="ltr">
                   {divisionArray.map((item, divIndex) => (
@@ -89,8 +91,12 @@ function CardsPage() {
 
           </main>
 
+          <div className="hamburger">
+              <Link to="/" className="ham"/>
+          </div>
 
-          <nav ref={nav}>
+
+          <div className="nav" ref={nav}>
               <div className="prev" data-value="-1">
                   {" "}
                   &lt;---{" "}
@@ -100,7 +106,7 @@ function CardsPage() {
                   {" "}
                   ---&gt;
               </div>
-          </nav>
+          </div>
 
       </div>
 

@@ -19,11 +19,9 @@ html {
   justify-content: space-between;
   height: 100vh;
 
-  .position {
-    position:sticky;
+  .header_container {
+      position: sticky;
     left: 0;
-    top: 0;
-    margin-bottom: 0;
   }
 
 
@@ -32,6 +30,7 @@ html {
     position: relative;
     flex-flow: row nowrap;
     width: 200vw;
+    transform: translateY(-10%);
 
 
     .row {
@@ -75,7 +74,6 @@ html {
         div {
           text-align: center;
           will-change: opacity;
-          transition: opacity 1.2s ease-in-out;
         }
       }
         }
@@ -179,17 +177,55 @@ html {
 
   }
 
-  nav {
-    display: flex;
-    position: sticky;
-    left: 0;
-    user-select: none;
-    justify-content: center;
-    width: 100%;
-    font-size: 1.5em;
-    padding-bottom: 2em;
+.hamburger {
+  position: fixed;
+  height: 100%;
+  right: 5vw;
+  display: flex;
+  align-items: center;
 
-    .prev {
+  .ham {
+    width: 4em;
+    height: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .ham:before,
+  .ham:after{
+    content: "";
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 4em;
+    height: 0.15em;
+    background-color: #F1F1F1;
+    transition: transform 0.4s ease-out;
+    will-change: transform;
+  }
+
+  .ham:hover:before {
+    transform: translateX(20%);
+  }
+
+  .ham:hover:after {
+    transform: translateX(-20%);
+
+  }
+}
+
+.nav {
+  display: flex;
+  position: sticky;
+  left: 0;
+  user-select: none;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.5em;
+  padding-bottom: 2em;
+
+  .prev {
       transform-origin: right center;
       transition: transform 0.5s ease-in-out;
       will-change: transform;
