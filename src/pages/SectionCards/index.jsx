@@ -17,7 +17,7 @@ function CardsPage() {
     const container = useRef(null);
     const nav = useRef(null);
 
-    useEffect(() => {
+ /*   useEffect(() => {
         window.addEventListener("wheel", function (e) {
             if (e.deltaY > 0) {
                 container.scrollLeft += e.deltaY;
@@ -27,7 +27,7 @@ function CardsPage() {
                 container.scrollLeft -= e.deltaY;
             }
         })
-    })
+    })*/
 
 
     /*useEffect(() => {
