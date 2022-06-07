@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from "react";
-import {useParams} from "react-router-dom";
+import {useParams, Link} from "react-router-dom";
 import HeaderHero from "../../components/Home/HeaderHero/index"
 import Tilty from "react-tilty";
 import Data from "../../Assets/Cards/dataCards";
@@ -88,16 +88,19 @@ function CardPage() {
                   >
                     {RectoElement}
                   </div>
-              </div>
-            </Tilty>
+                </div>
+              </Tilty>
+            </div>
+            <div className="text" ref={textRef} style={{opacity: opacity}}>
+              <h1>{Name}</h1>
+              <p>{Text}</p>
+            </div>
           </div>
-          <div className="text" ref={textRef} style={{opacity: opacity}}>
-            <h1>{Name}</h1>
-            <p>{Text}</p>
-          </div>
+        </main>
+        <div className="hamburger">
+          <Link to="/" className="ham"/>
         </div>
-      </main>
-    </>
+      </>
   );
 }
 

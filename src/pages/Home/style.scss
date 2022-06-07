@@ -66,8 +66,8 @@
           justify-content: center;
           top: 50%;
           left: -2%;
-          width: 201px;
-          height: 201px;
+          width: 12.5em;
+          height: 12.5em;
           border-radius: 50%;
           cursor: pointer;
 
@@ -75,7 +75,7 @@
             z-index: 1;
             position: absolute;
             display: flex;
-            font-size: 20px;
+            font-size: 1.25em;
             font-weight: 500;
             font-family: $body_family;
             text-transform: uppercase;
@@ -88,8 +88,8 @@
                             #222222 50%,
                             #0d0d0d 100%
             );
-            width: 200px !important;
-            height: 200px !important;
+            width: 9.97em !important;
+            height: 9.97em !important;
             border-radius: 50%;
             user-select: none;
             text-decoration: none !important;
@@ -99,8 +99,8 @@
             display: block;
             z-index: -1;
             background-color: $secondary;
-            width: 100%;
-            height: 100%;
+            width: 12.5em;
+            height: 12.5em;
             border-radius: 50%;
             transition: transform 0.3s ease-out;
           }
@@ -108,8 +108,8 @@
 
         .position:active {
           .cache-container {
-            width: 200px !important;
-            height: 200px !important;
+            width: 12.5em !important;
+            height: 12.5em !important;
           }
 
           .parallax-container {
